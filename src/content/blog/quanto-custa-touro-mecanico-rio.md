@@ -30,7 +30,7 @@ Uma proposta completa inclui:
 
 - **Equipamento + base inflável de queda** — a base não é opcional, é exigência da norma ABNT NBR 16.071.
 - **Operador profissional treinado** presente toda a festa — controla a intensidade, fiscaliza idade/peso e recolhe usuário em queda.
-- **Laudo INMETRO NBR 16.071 atualizado** — exigência legal para operação. Empresa séria entrega cópia digital antes do evento.
+- **Laudo ABNT NBR 16.071 atualizado** — exigência legal para operação. Empresa séria entrega cópia digital antes do evento.
 - **ART do operador (Anotação de Responsabilidade Técnica)** — registrada no CREA-RJ.
 - **Apólice de seguro de responsabilidade civil** — cobertura mínima R$ 100.000 (recomendado R$ 300.000).
 - **Atestado de manutenção mensal** do equipamento.
@@ -48,7 +48,7 @@ Uma proposta completa inclui:
 Empresa amadora costuma cortar:
 
 1. **Seguro** — sem apólice, qualquer machucado em festa vira problema do organizador (não da empresa).
-2. **Laudo INMETRO** — operação irregular, vulnerável a fiscalização.
+2. **Laudo ABNT NBR 16.071** — operação irregular, vulnerável a fiscalização.
 3. **Operador treinado** — usa ajudante leigo, sem ART.
 4. **Manutenção** — equipamento velho com risco de furo ou pane elétrica.
 

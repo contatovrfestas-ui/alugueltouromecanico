@@ -28,9 +28,9 @@ export const PAGINAS_FORMATURA: IPagina[] = [
     bairro: 'tijuca',
     evento: 'formatura',
     description:
-      'Touro mecânico profissional para formaturas na Tijuca — Maracanã Estádio, Clube Tijuca, Salão Lebre. Laudo INMETRO NBR 16.071, seguro de RC R$ 300.000.',
+      'Touro mecânico profissional para formaturas na Tijuca — Maracanã Estádio, Clube Tijuca, Salão Lebre. Laudo ABNT NBR 16.071, seguro de RC R$ 300.000.',
     faqs: [
-      { p: 'Atendem o Maracanãzinho e o Estádio do Maracanã pra formatura?', r: 'Sim, ambos. Maracanã/Maracanãzinho exige laudo INMETRO + ART do operador + apólice de RC R$ 300.000 + cadastro de fornecedor com 30 dias de antecedência. Documentação completa entregue em 24h.' },
+      { p: 'Atendem o Maracanãzinho e o Estádio do Maracanã pra formatura?', r: 'Sim, ambos. Maracanã/Maracanãzinho exige laudo ABNT NBR 16.071 + ART do operador + apólice de RC R$ 300.000 + cadastro de fornecedor com 30 dias de antecedência. Documentação completa entregue em 24h.' },
       { p: 'Atendem clube Tijuca, Casa de Festas Salão Lebre e arredores?', r: 'Atendemos. Clube Tijuca, Casa de Festas Salão Lebre, Casa do Bispo, Sociedade Hípica — todos já receberam nosso material. Em casa de festas alugada, entregamos documentação ao gerente em 24h.' },
       { p: 'Tempo de operação ideal pra formatura com 200-400 formandos?', r: 'Pra formatura de 200-400 formandos, 4 horas de operação cobrem o pico (geralmente 22h-2h). Acima disso, fila fica longa demais — recomendamos 2 unidades em paralelo se forem mais de 400 pessoas.' },
       { p: 'Pode beber e subir no touro?', r: POL_BEBIDA },
@@ -46,9 +46,9 @@ export const PAGINAS_FORMATURA: IPagina[] = [
     bairro: 'barra-da-tijuca',
     evento: 'formatura',
     description:
-      'Touro mecânico profissional para formaturas na Barra da Tijuca — Riocentro, Jeunesse Arena, Vivo Rio, Casa de Festas Outback. Laudo INMETRO, seguro RC.',
+      'Touro mecânico profissional para formaturas na Barra da Tijuca — Riocentro, Jeunesse Arena, Vivo Rio, Casa de Festas Outback. Laudo ABNT NBR 16.071, seguro RC.',
     faqs: [
-      { p: 'Atendem Riocentro, Jeunesse Arena e Vivo Rio pra formatura?', r: 'Sim, todos. Riocentro/Jeunesse Arena exigem laudo INMETRO + ART + apólice de RC R$ 300.000 + cadastro fornecedor 45 dias antes. Vivo Rio (Aterro) exige documentação 30 dias antes.' },
+      { p: 'Atendem Riocentro, Jeunesse Arena e Vivo Rio pra formatura?', r: 'Sim, todos. Riocentro/Jeunesse Arena exigem laudo ABNT NBR 16.071 + ART + apólice de RC R$ 300.000 + cadastro fornecedor 45 dias antes. Vivo Rio (Aterro) exige documentação 30 dias antes.' },
       { p: 'Casas de festa típicas de formatura na Barra que vocês atendem?', r: 'Atendemos: Casa de Festas Outback, Casa Marambaia, Quinta da Boa Vista (eventos), Espaço Tom Jobim, Riocentro Pavilhão 5. Toda casa de festa da Av. das Américas e Av. Sernambetiba já recebeu nosso material — basta indicar.' },
       { p: 'Tempo de operação ideal pra formatura com 300+ formandos na Barra?', r: 'Pra formatura grande (300+ formandos) na Barra, 4-6 horas de operação. Pico costuma ser 1h-3h. Pra evento de mais de 500 pessoas, recomendamos 2 unidades em paralelo (1 profissional + 1 gigante).' },
       { p: 'Tempo de entrega real Méier → Barra em formatura noturna?', r: 'Saída Méier 21h-22h: 30-50 min até a Barra (sem rush). Em sábado de formatura, recomendamos entrega 2-3h antes do início.' },
@@ -64,7 +64,7 @@ export const PAGINAS_FORMATURA: IPagina[] = [
     bairro: 'recreio',
     evento: 'formatura',
     description:
-      'Touro mecânico profissional para formaturas no Recreio dos Bandeirantes e Pontal — casas de festa e clubes do entorno. Laudo INMETRO, seguro de RC R$ 300.000.',
+      'Touro mecânico profissional para formaturas no Recreio dos Bandeirantes e Pontal — casas de festa e clubes do entorno. Laudo ABNT NBR 16.071, seguro de RC R$ 300.000.',
     faqs: [
       { p: 'Casas de festa pra formatura no Recreio que vocês atendem?', r: 'Casas de festa do entorno do Posto 12, Av. Lúcio Costa, Estr. do Pontal — espaços com área externa generosa, ideais pro touro mecânico. Em casa de praia (Pontal), confirmamos chão firme antes de fechar.' },
       { p: 'Tempo de entrega real Méier → Recreio em formatura noturna?', r: 'Saída de Méier 21h-23h: 50-75 min até o Recreio (rush noturno fim de semana persiste). Recomendamos entrega 3h antes do início pra montar com folga.' },
@@ -82,7 +82,7 @@ export const PAGINAS_FORMATURA: IPagina[] = [
     bairro: 'botafogo',
     evento: 'formatura',
     description:
-      'Touro mecânico (modelo profissional) para formaturas em Botafogo, Flamengo e Glória — Casa Daros, Cobal do Humaitá, Estácio Sá. Laudo INMETRO NBR 16.071.',
+      'Touro mecânico (modelo profissional) para formaturas em Botafogo, Flamengo e Glória — Casa Daros, Cobal do Humaitá, Estácio Sá. Laudo ABNT NBR 16.071.',
     faqs: [
       { p: 'Casas de festa pra formatura em Botafogo que vocês atendem?', r: 'Casa Daros (Rua General Severiano), Cobal do Humaitá (área de eventos), Espaço Tom Jobim (Aterro), Casa do Choro (Lapa próxima) — todos já receberam nosso material. Em hotel da Zona Sul (Hotel Glória), exigem documentação 30 dias antes.' },
       { p: 'Atendem o Aterro do Flamengo pra formatura ao ar livre?', r: 'Aterro exige autorização da Riotur + ART + apólice + alvará especial — processo de 60 dias com a Subprefeitura da AP2. Atendemos, mas recomendamos uma casa de festa fechada por simplicidade.' },
@@ -100,9 +100,9 @@ export const PAGINAS_FORMATURA: IPagina[] = [
     bairro: 'ipanema',
     evento: 'formatura',
     description:
-      'Touro mecânico profissional para formaturas em Ipanema, Leblon e Arpoador — hotéis, clubes e cobertura. Laudo INMETRO, seguro de RC R$ 300.000.',
+      'Touro mecânico profissional para formaturas em Ipanema, Leblon e Arpoador — hotéis, clubes e cobertura. Laudo ABNT NBR 16.071, seguro de RC R$ 300.000.',
     faqs: [
-      { p: 'Atendem hotel ou clube de Ipanema/Leblon pra formatura?', r: 'Sim. Hotéis (Caesar Park, Sol Ipanema, Fasano, Belmond Copacabana Palace) e clubes (Caiçaras, Country Club, Marina All Suítes) exigem laudo INMETRO + ART + apólice de RC R$ 300.000 com cláusula de hospitalidade. Documentação 30 dias antes.' },
+      { p: 'Atendem hotel ou clube de Ipanema/Leblon pra formatura?', r: 'Sim. Hotéis (Caesar Park, Sol Ipanema, Fasano, Belmond Copacabana Palace) e clubes (Caiçaras, Country Club, Marina All Suítes) exigem laudo ABNT NBR 16.071 + ART + apólice de RC R$ 300.000 com cláusula de hospitalidade. Documentação 30 dias antes.' },
       { p: 'Cabe em cobertura de prédio em Ipanema/Leblon?', r: 'Cobertura com pé-direito 3m+ e área 7×7m: comporta o profissional. Mais comum em prédio anos 80-90. Mande foto + medidas pelo WhatsApp; respondemos em 30 minutos.' },
       { p: 'Onde estaciona a van em Vieira Souto/Delfim Moreira?', r: 'Coordenamos com porteiro pra usar vaga de carga e descarga. Vieira Souto bloqueada aos domingos pela manhã (até 13h, Lazer aberto): entregamos antes das 7h ou depois das 13h. Em formatura noturna, sem problema.' },
       { p: 'Tempo de entrega real Méier → Ipanema em formatura noturna?', r: 'Saída Méier 21h-23h: 30-50 min até Ipanema. Em formatura, entrega 2-3h antes do início pra montar com folga.' },
@@ -118,9 +118,9 @@ export const PAGINAS_FORMATURA: IPagina[] = [
     bairro: 'copacabana',
     evento: 'formatura',
     description:
-      'Touro mecânico profissional para formaturas em Copacabana e Leme — hotéis, ballrooms e coberturas. Laudo INMETRO NBR 16.071, seguro RC R$ 300.000.',
+      'Touro mecânico profissional para formaturas em Copacabana e Leme — hotéis, ballrooms e coberturas. Laudo ABNT NBR 16.071, seguro RC R$ 300.000.',
     faqs: [
-      { p: 'Atendem hotel/ballroom de Copacabana pra formatura?', r: 'Sim. Copacabana Palace (Belmond), Hilton, Pestana Rio, Hotel Atlântico — todos já receberam nosso material. Exigem laudo INMETRO + ART + RC R$ 300.000 com cláusula de hospitalidade + cadastro fornecedor 30 dias antes.' },
+      { p: 'Atendem hotel/ballroom de Copacabana pra formatura?', r: 'Sim. Copacabana Palace (Belmond), Hilton, Pestana Rio, Hotel Atlântico — todos já receberam nosso material. Exigem laudo ABNT NBR 16.071 + ART + RC R$ 300.000 com cláusula de hospitalidade + cadastro fornecedor 30 dias antes.' },
       { p: 'Cabe no ballroom típico de hotel de Copacabana?', r: 'Ballrooms de hotel grandes têm pé-direito 4m+ e área 200m²+ — comporta o profissional e o gigante sem problema. Em ballroom menor (Pestana, Atlântico), confirmamos com gerente.' },
       { p: 'Tempo de entrega real Méier → Copacabana em formatura noturna?', r: 'Saída Méier 21h-23h: 28-50 min até Copacabana. Recomendamos entrega 2h antes do início pra montar com folga.' },
       { p: 'Lei do silêncio em Copacabana se aplica a formatura em hotel?', r: 'Hotel é zona mista — formatura em ballroom interno não tem restrição de horário (estrutura preparada acusticamente). Em festa em terraço externo de hotel, segue Lei do Silêncio (3.268/01) — costuma ser permitido até 1h.' },
@@ -136,10 +136,10 @@ export const PAGINAS_FORMATURA: IPagina[] = [
     bairro: 'vila-isabel',
     evento: 'formatura',
     description:
-      'Touro mecânico profissional para formaturas em Vila Isabel, Maracanã, Grajaú — quadras de escola de samba, clubes e casas de festa. Laudo INMETRO.',
+      'Touro mecânico profissional para formaturas em Vila Isabel, Maracanã, Grajaú — quadras de escola de samba, clubes e casas de festa. Laudo ABNT NBR 16.071.',
     faqs: [
       { p: 'Atendem quadra de escola de samba (Unidos de Vila Isabel) pra formatura?', r: 'Sim. Quadra da Unidos de Vila Isabel é cenário comum de formatura — pé-direito 3,2m+ e área 8×8m comportam o gigante. Quadra coberta também garante operação mesmo com chuva (NBR não invalida estrutura coberta).' },
-      { p: 'Atendem o Maracanãzinho e estádio do Maracanã pra formatura?', r: 'Sim, ambos. Maracanã/Maracanãzinho exigem laudo INMETRO + ART + apólice RC R$ 300.000 + cadastro fornecedor com 30-45 dias de antecedência. Documentação completa em 24h.' },
+      { p: 'Atendem o Maracanãzinho e estádio do Maracanã pra formatura?', r: 'Sim, ambos. Maracanã/Maracanãzinho exigem laudo ABNT NBR 16.071 + ART + apólice RC R$ 300.000 + cadastro fornecedor com 30-45 dias de antecedência. Documentação completa em 24h.' },
       { p: 'Tempo de entrega real Méier → Vila Isabel/Maracanã em formatura noturna?', r: 'Bairros vizinhos do depósito — 18-30 min em horário tranquilo, 25-45 min em rush noturno. Em formatura, entrega 2h antes do início.' },
       { p: 'Casas de festa típicas pra formatura em Vila Isabel/Grajaú?', r: 'Casa de Festas Castelo Branco (Vila Isabel), Quadra da Unidos de Vila Isabel, Country Club Maracanã, Espaço Boulevard 28 — atendemos todos. Em quadra de escola de samba, exigem documentação ao gerente 15 dias antes.' },
       { p: 'Tempo de operação ideal pra formatura com 200-400 formandos?', r: '4-5 horas de operação cobrem o pico (22h-3h). Em formatura grande de quadra, 2 unidades em paralelo cortam fila pela metade.' },
@@ -154,7 +154,7 @@ export const PAGINAS_FORMATURA: IPagina[] = [
     bairro: 'jacarepagua',
     evento: 'formatura',
     description:
-      'Touro mecânico profissional para formaturas em Jacarepaguá, Taquara, Freguesia e Pechincha — casas de festa, clubes e quadras. Laudo INMETRO NBR 16.071.',
+      'Touro mecânico profissional para formaturas em Jacarepaguá, Taquara, Freguesia e Pechincha — casas de festa, clubes e quadras. Laudo ABNT NBR 16.071.',
     faqs: [
       { p: 'Casas de festa pra formatura em Jacarepaguá que vocês atendem?', r: 'Casas de festa em Taquara, Freguesia, Pechincha, Praça Seca — espaços com área externa generosa típicos do bairro. Em condomínio fechado, exigem cadastro de fornecedor 48h antes na portaria.' },
       { p: 'Tempo de entrega real Méier → Jacarepaguá em formatura noturna?', r: 'Taquara/Pechincha (próximo Linha Amarela): 30-50 min. Freguesia: 40-60 min. Curicica: 50-75 min. Recomendamos entrega 2-3h antes do início.' },
@@ -172,9 +172,9 @@ export const PAGINAS_FORMATURA: IPagina[] = [
     bairro: 'meier',
     evento: 'formatura',
     description:
-      'Touro mecânico profissional para formaturas no Méier, Cachambi, Engenho de Dentro — Norte Shopping eventos, casas de festa do bairro. Laudo INMETRO.',
+      'Touro mecânico profissional para formaturas no Méier, Cachambi, Engenho de Dentro — Norte Shopping eventos, casas de festa do bairro. Laudo ABNT NBR 16.071.',
     subtitle:
-      'Touro mecânico profissional pra formaturas no Méier e bairros vizinhos da Zona Norte. Bairro do nosso depósito — entrega rápida garantida em 8-30 minutos. Laudo INMETRO NBR 16.071, seguro de RC R$ 300.000.',
+      'Touro mecânico profissional pra formaturas no Méier e bairros vizinhos da Zona Norte. Bairro do nosso depósito — entrega rápida garantida em 8-30 minutos. Laudo ABNT NBR 16.071, seguro de RC R$ 300.000.',
     faqs: [
       { p: 'Casas de festa pra formatura no Méier que vocês atendem?', r: 'Casa de Festas Méier, Norte Shopping (área de eventos), Casa de Festas Cachambi, Casa do Padre — todos já receberam nosso material. Em casa de festa alugada, entregamos documentação ao gerente em 24h.' },
       { p: 'Tempo de entrega real no Méier em formatura noturna?', r: 'Bairro do nosso depósito — 8-15 min em qualquer endereço. Em formatura noturna, entrega 1-2h antes do início é mais que suficiente. Dia útil 18h-21h: 12-25 min (rush sentido bairro funciona a favor).' },
@@ -192,7 +192,7 @@ export const PAGINAS_FORMATURA: IPagina[] = [
     bairro: 'madureira',
     evento: 'formatura',
     description:
-      'Touro mecânico profissional para formaturas em Madureira — quadra da Portela, Império Serrano, casas de festa do bairro. Laudo INMETRO NBR 16.071.',
+      'Touro mecânico profissional para formaturas em Madureira — quadra da Portela, Império Serrano, casas de festa do bairro. Laudo ABNT NBR 16.071.',
     faqs: [
       { p: 'Atendem quadra da Portela e Império Serrano pra formatura?', r: 'Sim. Quadra da Portela e quadra do Império Serrano são cenários comuns de formatura — pé-direito 3,2m+ e área 8×8m comportam o gigante. Documentação ao gerente da quadra em 24h.' },
       { p: 'Casas de festa pra formatura em Madureira que vocês atendem?', r: 'Casa de Festas Madureira, Casa de Festas Cascadura, Galeria Comercial Madureira (eventos), Mercadão de Madureira (área de eventos privados). Atendemos toda a região com frequência.' },

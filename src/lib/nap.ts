@@ -19,7 +19,7 @@ export const NAP = {
 export const SITE = {
   title: 'Aluguel Touro Mecânico | Rio de Janeiro',
   defaultDescription:
-    'Aluguel de touro mecânico no Rio de Janeiro com laudo INMETRO, seguro de evento e operador profissional. Festa junina, formatura, corporativo e aniversário em todos os bairros.',
+    'Aluguel de touro mecânico no Rio com laudo ABNT NBR 16.071, seguro e operador profissional. Festa junina, formatura, corporativo e aniversário.',
   defaultOgImage: '/images/og/default.jpg',
   twitterHandle: '',
   locale: 'pt-BR',

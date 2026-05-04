@@ -3,25 +3,25 @@ title: 'Segurança no touro mecânico: ABNT NBR 16.071 exige'
 description: 'ABNT NBR 16.071:2012 regulamenta touro mecânico no Brasil. Os 7 pontos críticos que a empresa de aluguel deve cumprir.'
 pubDate: 2026-05-06
 heroImage: '/images/blog/seguranca-norma-nbr-16071.webp'
-heroImageAlt: 'Equipamento de proteção e laudo INMETRO de touro mecânico inflável'
-tags: ['segurança', 'norma técnica', 'INMETRO', 'guia']
+heroImageAlt: 'Equipamento de proteção e laudo ABNT NBR 16.071 de touro mecânico inflável'
+tags: ['segurança', 'norma técnica', 'ABNT', 'guia']
 relatedEventos: ['festa-junina', 'formatura', 'aniversario-infantil']
 ---
 
-Touro mecânico inflável **é regulamentado pela ABNT NBR 16.071:2012**, a norma brasileira pra brinquedos infláveis recreativos. Quando você aluga, **tem direito legal de exigir laudo INMETRO atualizado**, e em caso de fiscalização ou acidente, é a documentação dessa norma que protege organizador e usuário.
+Touro mecânico inflável **é regulamentado pela ABNT NBR 16.071:2012**, a norma brasileira pra brinquedos infláveis recreativos. Quando você aluga, **tem direito legal de exigir laudo NBR 16.071 atualizado**, e em caso de fiscalização ou acidente, é a documentação dessa norma que protege organizador e usuário.
 
 Esse texto resume os 7 pontos críticos da NBR 16.071 que toda festa privada deve verificar — e como pedir cada um pela empresa de aluguel.
 
-## 1. Laudo INMETRO atualizado anualmente
+## 1. Laudo NBR 16.071 atualizado anualmente
 
-A NBR 16.071 exige inspeção e laudo a **cada 12 meses**, emitido por organismo de certificação acreditado pelo INMETRO. O laudo cobre:
+A NBR 16.071 exige inspeção e laudo a **cada 12 meses**, emitido por engenheiro mecânico com ART registrada no CREA. O laudo cobre:
 
 - Integridade do material (PVC, costuras, soldas)
 - Pressão de operação do soprador
 - Sistema de ancoragem
 - Marcação de área de queda
 
-**Como cobrar:** "Posso receber cópia digital do laudo INMETRO atualizado antes do evento?" — empresa séria entrega em 24h.
+**Como cobrar:** "Posso receber cópia digital do laudo NBR 16.071 atualizado antes do evento?" — empresa séria entrega em 24h.
 
 ## 2. Base de queda inflável obrigatória
 
@@ -31,7 +31,7 @@ A norma exige **base inflável separada** envolvendo o touro, com área proporci
 
 ## 3. Operador profissional treinado, presente toda a operação
 
-A NBR 16.071 e o regulamento INMETRO exigem **operador treinado presente toda a operação**, com **ART (Anotação de Responsabilidade Técnica)** registrada no CREA-RJ ou conselho regional equivalente.
+A NBR 16.071 exige **operador treinado presente toda a operação**, com **ART (Anotação de Responsabilidade Técnica)** registrada no CREA-RJ ou conselho regional equivalente.
 
 **Atribuições do operador:**
 - Controlar a intensidade do touro via joystick (5 níveis no profissional, 3 no infantil)
@@ -91,7 +91,7 @@ Equipamento inflável passa por **manutenção mensal**: checagem de costuras, s
 
 Em festa privada com touro mecânico, você é **consumidor de serviço** sob CDC. Tem direito de:
 
-- Receber documentação INMETRO antes do pagamento integral
+- Receber documentação NBR 16.071 antes do pagamento integral
 - Cancelar com reembolso se documentação não confere
 - Receber crédito ou reagendamento gratuito em caso de problema do fornecedor (chuva, equipamento avariado, atraso)
 
@@ -99,4 +99,4 @@ Em caso de problema, registre reclamação no Procon-RJ com cópia do contrato +
 
 ---
 
-Se a empresa de aluguel hesita em entregar laudo INMETRO, ART e apólice, é sinal claro de operação irregular — e você não quer assumir o risco. Trabalhe sempre com quem entrega documentação completa antes mesmo do pagamento integral.
+Se a empresa de aluguel hesita em entregar laudo NBR 16.071, ART e apólice, é sinal claro de operação irregular — e você não quer assumir o risco. Trabalhe sempre com quem entrega documentação completa antes mesmo do pagamento integral.

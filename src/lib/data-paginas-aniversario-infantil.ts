@@ -29,11 +29,11 @@ export const PAGINAS_ANIVERSARIO_INFANTIL: IPagina[] = [
     bairro: 'tijuca',
     evento: 'aniversario-infantil',
     description:
-      'Touro mecânico infantil para aniversário 6-12 anos na Tijuca, Vila Isabel e Grajaú. Casa de festas e salão de prédio. Laudo INMETRO NBR 16.071.',
+      'Touro mecânico infantil para aniversário 6-12 anos na Tijuca, Vila Isabel e Grajaú. Casa de festas e salão de prédio. Laudo ABNT NBR 16.071.',
     preco_min: 800,
     preco_max: 1500,
     faqs: [
-      { p: 'Quanto custa touro mecânico pra festa infantil de 30 crianças na Tijuca?', r: 'Festa infantil de 30-50 crianças com touro infantil: R$ 800-1.200 por 4h de operação, com operador incluso. Em casa de festas alugada (Toy Festas, Casa do Padre), entregamos toda documentação INMETRO + ART + apólice em 24h.' },
+      { p: 'Quanto custa touro mecânico pra festa infantil de 30 crianças na Tijuca?', r: 'Festa infantil de 30-50 crianças com touro infantil: R$ 800-1.200 por 4h de operação, com operador incluso. Em casa de festas alugada (Toy Festas, Casa do Padre), entregamos toda documentação ABNT NBR 16.071 + ART + apólice em 24h.' },
       { p: 'Quais casas de festas infantis na Tijuca recebem touro mecânico?', r: 'Atendemos com frequência: Toy Festas (Saens Peña), Casa do Padre, Brinquelândia Tijuca, Casa de Festas Salão Lebre. Toda casa de festa do bairro já recebeu nosso material — basta indicar.' },
       { p: 'Cabe no salão de festa de prédio na Tijuca?', r: 'Prédios pós-2000 na Saens Peña/Praça Saens Peña: pé-direito 2,80–3,20m, comportam o infantil tranquilamente. Prédios anos 70-80: 2,30–2,60m, ainda comportam o infantil (precisa só 2,80m). Mande foto + medidas pelo WhatsApp.' },
       { p: 'Tempo de entrega real Méier → Tijuca em festa infantil sábado tarde?', r: 'Saída Méier sábado 12h-15h: 22-35 min até a Tijuca. Em festa com início 15h, entregamos 13h pra montar com 2h de folga.' },
@@ -49,7 +49,7 @@ export const PAGINAS_ANIVERSARIO_INFANTIL: IPagina[] = [
     bairro: 'barra-da-tijuca',
     evento: 'aniversario-infantil',
     description:
-      'Touro mecânico inflável infantil para aniversário de criança 6-12 anos na Barra da Tijuca, Recreio e Jacarepaguá. Casa de festas e condomínios. Laudo INMETRO.',
+      'Touro mecânico inflável infantil para aniversário de criança 6-12 anos na Barra da Tijuca, Recreio e Jacarepaguá. Casa de festas e condomínios. Laudo ABNT NBR 16.071.',
     preco_min: 900,
     preco_max: 1500,
     faqs: [
@@ -70,7 +70,7 @@ export const PAGINAS_ANIVERSARIO_INFANTIL: IPagina[] = [
     evento: 'aniversario-infantil',
     title: 'Touro Mecânico Recreio — Aniversário Infantil 2026',
     description:
-      'Touro mecânico infantil para aniversário no Recreio dos Bandeirantes, Pontal e Vargem Grande. Casas térreas e condomínios. Laudo INMETRO.',
+      'Touro mecânico infantil para aniversário no Recreio dos Bandeirantes, Pontal e Vargem Grande. Casas térreas e condomínios. Laudo ABNT NBR 16.071.',
     preco_min: 900,
     preco_max: 1500,
     faqs: [
@@ -90,7 +90,7 @@ export const PAGINAS_ANIVERSARIO_INFANTIL: IPagina[] = [
     bairro: 'jacarepagua',
     evento: 'aniversario-infantil',
     description:
-      'Touro mecânico infantil para aniversário em Jacarepaguá, Taquara, Freguesia e Pechincha. Casa de festas, condomínios e quintais. Laudo INMETRO.',
+      'Touro mecânico infantil para aniversário em Jacarepaguá, Taquara, Freguesia e Pechincha. Casa de festas, condomínios e quintais. Laudo ABNT NBR 16.071.',
     preco_min: 800,
     preco_max: 1500,
     faqs: [
@@ -110,7 +110,7 @@ export const PAGINAS_ANIVERSARIO_INFANTIL: IPagina[] = [
     bairro: 'vila-isabel',
     evento: 'aniversario-infantil',
     description:
-      'Touro mecânico inflável infantil para aniversário de criança em Vila Isabel, Maracanã, Grajaú, Andaraí. Casa de festas e salão de prédio. Laudo INMETRO.',
+      'Touro mecânico inflável infantil para aniversário de criança em Vila Isabel, Maracanã, Grajaú, Andaraí. Casa de festas e salão de prédio. Laudo ABNT NBR 16.071.',
     preco_min: 800,
     preco_max: 1400,
     faqs: [
@@ -132,7 +132,7 @@ export const PAGINAS_ANIVERSARIO_INFANTIL: IPagina[] = [
     description:
       'Touro mecânico inflável infantil para aniversário de criança no Méier, Cachambi, Engenho de Dentro, Piedade. Bairro do depósito — entrega rápida.',
     subtitle:
-      'Touro mecânico infantil pra aniversário de criança 6-12 anos no Méier e bairros vizinhos da Zona Norte. Bairro do nosso depósito — entrega rápida garantida em 8-30 minutos. Laudo INMETRO NBR 16.071.',
+      'Touro mecânico infantil pra aniversário de criança 6-12 anos no Méier e bairros vizinhos da Zona Norte. Bairro do nosso depósito — entrega rápida garantida em 8-30 minutos. Laudo ABNT NBR 16.071.',
     preco_min: 700,
     preco_max: 1300,
     faqs: [
@@ -152,7 +152,7 @@ export const PAGINAS_ANIVERSARIO_INFANTIL: IPagina[] = [
     bairro: 'copacabana',
     evento: 'aniversario-infantil',
     description:
-      'Touro mecânico inflável infantil para aniversário de criança em Copacabana e Leme. Casa de festas e salão de prédio. Laudo INMETRO NBR 16.071.',
+      'Touro mecânico inflável infantil para aniversário de criança em Copacabana e Leme. Casa de festas e salão de prédio. Laudo ABNT NBR 16.071.',
     preco_min: 900,
     preco_max: 1500,
     faqs: [
@@ -172,7 +172,7 @@ export const PAGINAS_ANIVERSARIO_INFANTIL: IPagina[] = [
     bairro: 'botafogo',
     evento: 'aniversario-infantil',
     description:
-      'Touro mecânico inflável infantil para aniversário de criança em Botafogo, Humaitá, Flamengo. Casa de festas e quintais. Laudo INMETRO NBR 16.071.',
+      'Touro mecânico inflável infantil para aniversário de criança em Botafogo, Humaitá, Flamengo. Casa de festas e quintais. Laudo ABNT NBR 16.071.',
     preco_min: 800,
     preco_max: 1400,
     faqs: [
@@ -192,7 +192,7 @@ export const PAGINAS_ANIVERSARIO_INFANTIL: IPagina[] = [
     bairro: 'ipanema',
     evento: 'aniversario-infantil',
     description:
-      'Touro mecânico inflável infantil para aniversário de criança em Ipanema, Leblon, Arpoador. Casa de festas, hotel kids e quintais. Laudo INMETRO.',
+      'Touro mecânico inflável infantil para aniversário de criança em Ipanema, Leblon, Arpoador. Casa de festas, hotel kids e quintais. Laudo ABNT NBR 16.071.',
     preco_min: 1000,
     preco_max: 1600,
     faqs: [
@@ -212,7 +212,7 @@ export const PAGINAS_ANIVERSARIO_INFANTIL: IPagina[] = [
     bairro: 'madureira',
     evento: 'aniversario-infantil',
     description:
-      'Touro mecânico inflável infantil para aniversário de criança em Madureira, Cascadura, Oswaldo Cruz, Campinho. Casa de festas e salão de prédio. Laudo INMETRO.',
+      'Touro mecânico inflável infantil para aniversário de criança em Madureira, Cascadura, Oswaldo Cruz, Campinho. Casa de festas e salão de prédio. Laudo ABNT NBR 16.071.',
     preco_min: 700,
     preco_max: 1300,
     faqs: [

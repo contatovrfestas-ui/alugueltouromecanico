@@ -21,8 +21,8 @@ const paginas = await getPaginasData();
 
 const paginasDoBairro = paginas.filter(p => p.bairro === bairro.slug);
 
-const title = `Aluguel de Touro Mecânico em ${bairro.nome}, Rio de Janeiro`;
-const description = `Touro mecânico para festa, formatura, aniversário e evento corporativo em ${bairro.nome} e bairros próximos. Entrega em ${bairro.tempo_entrega_min}-${bairro.tempo_entrega_max} min do depósito Méier. Laudo INMETRO, seguro de RC.`;
+const title = `Aluguel de touro mecânico em ${bairro.nome}`;
+const description = `Touro mecânico em ${bairro.nome} pra festa junina, formatura, aniversário e corporativo. Laudo ABNT NBR 16.071 e seguro de RC.`;
 const pageUrl = `https://alugueltouromecanico.com.br/${bairro.slug}`;
 
 const breadcrumbs = [
@@ -57,7 +57,7 @@ const fontes = [
     <p class="text-lg mt-3">
       Touro mecânico profissional para festa junina, formatura, aniversário e evento corporativo
       em {bairro.nome}. Entrega em {bairro.tempo_entrega_min}-{bairro.tempo_entrega_max} minutos
-      do depósito Méier, com laudo INMETRO, seguro de RC R$ 300.000 e operador profissional toda a festa.
+      do depósito Méier, com laudo ABNT NBR 16.071, seguro de RC R$ 300.000 e operador profissional toda a festa.
     </p>
     <div class="mt-6">
       <CTAWhatsApp bairro={bairro.nome} />

@@ -16,7 +16,7 @@ Esse texto cobre tudo que comissão de formatura ou empresa organizadora (Estaç
 ## Espaços de formatura no Rio que recebem touro mecânico
 
 ### Espaços grandes (300-500+ formandos)
-- **Maracanãzinho e Estádio do Maracanã** — exigem laudo INMETRO + ART + apólice RC R$ 300.000 + cadastro fornecedor 30 dias antes
+- **Maracanãzinho e Estádio do Maracanã** — exigem laudo ABNT NBR 16.071 + ART + apólice RC R$ 300.000 + cadastro fornecedor 30 dias antes
 - **Riocentro (Pavilhões 4, 5)** — cadastro fornecedor 45 dias antes
 - **Jeunesse Arena** — exige documentação 45 dias antes
 - **Vivo Rio (Aterro do Flamengo)** — documentação 30 dias antes
@@ -56,7 +56,7 @@ Hora extra acima do contratado custa R$ 200-350/hora — combine antes pra não 
 
 Maracanãzinho, Riocentro e Jeunesse Arena exigem **kit completo**:
 
-1. Laudo INMETRO NBR 16.071 atualizado
+1. Laudo ABNT NBR 16.071 atualizado
 2. ART do operador (CREA-RJ)
 3. Apólice de seguro de responsabilidade civil **R$ 300.000** com cláusula de cobertura no espaço
 4. Atestado de manutenção mensal

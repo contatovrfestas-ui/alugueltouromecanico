@@ -17,11 +17,11 @@ Esse guia mostra a tabela real de pé-direito por época do prédio, qual modelo
 
 Os três modelos de touro mecânico operados pela [Aluguel Touro Mecânico](/) têm exigências diferentes de altura:
 
-| Modelo | Altura do brinquedo (sem usuário) | Altura mínima do teto | Recomendado |
-|--------|------------------------------------|------------------------|-------------|
-| [Infantil](/modelos/infantil/) | 1,15 m | **2,30 m** | salão de prédio antigo, Copacabana, Botafogo |
-| [Profissional](/modelos/profissional/) | 1,55 m | **2,80 m** | salão de prédio moderno, condomínio Barra/Recreio |
-| [Gigante](/modelos/gigante/) | 1,80 m | **3,20 m** | clube, casa de festa, hotel, espaço de evento |
+| Modelo | Área inflada | Pé-direito mínimo | Recomendado |
+|--------|--------------|---------------------|-------------|
+| [Infantil](/modelos/infantil/) | 3×3 m | **2,80 m** | salão de prédio padrão, Copacabana, Botafogo |
+| [Profissional](/modelos/profissional/) | 5×5 m | **3,00 m** | salão de prédio moderno, condomínio Barra/Recreio |
+| [Gigante](/modelos/gigante/) | 6×6 m | **3,20 m** | clube, casa de festa, hotel, espaço de evento |
 
 A altura mínima do teto considera o usuário em pé sobre a sela do touro durante o movimento — entre 60 e 90 cm acima do brinquedo. Pé-direito menor que esse limite vira risco de acidente: cabeça contra teto, lustre arrancado, dano à instalação elétrica.
 
@@ -37,7 +37,7 @@ Cruzando dados de habite-se da Prefeitura do Rio com nosso histórico de instala
 | 2000-2010 | 2,75-3,00 m | Barra, Jacarepaguá, Recreio | condomínio fechado padrão MRV/PDG |
 | 2015-2026 | 2,90-3,20 m | Recreio, Vargem Grande, Camorim | empreendimento alto padrão |
 
-A regra geral: **prédio dos anos 60-70 é o mais difícil**. Salão de festa de Copacabana ou Botafogo construído em 1965-1972 frequentemente tem **2,30-2,55 m de teto** — limite mínimo absoluto pro modelo infantil, inviável pro profissional e gigante.
+A regra geral: **prédio dos anos 60-70 é o mais difícil**. Salão de festa de Copacabana ou Botafogo construído em 1965-1972 frequentemente tem **2,40-2,70 m de teto** — abaixo do mínimo de qualquer modelo nosso (2,80m pro infantil). Em casos limítrofes, vale medir o ponto mais baixo do teto (lustre, forro) antes de fechar o orçamento.
 
 ## Bairros do Rio com mais restrição de pé-direito
 
@@ -65,7 +65,7 @@ Cinco minutos de medida evita 90% das frustrações.
 
 ## E quando o teto é baixo demais? Alternativas
 
-Se o pé-direito do seu salão é menor que **2,30 m** — caso de algum prédio de Copacabana ou Botafogo dos anos 50 — o touro mecânico não cabe. Alternativas:
+Se o pé-direito do seu salão é menor que **2,80 m** — caso de algum prédio de Copacabana ou Botafogo dos anos 50 — o touro mecânico não cabe. Alternativas:
 
 - **Festa em outro local** — salão alugado, clube, casa de festa, espaço de evento (todos têm pé-direito 3 m+)
 - **Festa ao ar livre** — pátio do prédio, [festa de rua](/blog/autorizacao-festa-rua-condominio-rio/), praça privada, jardim do condomínio
@@ -81,8 +81,8 @@ Se sua festa é em prédio histórico do Centro, **avise no orçamento** — o o
 
 ## Perguntas frequentes
 
-**Meu salão de festa tem 2,55 m de pé-direito. Cabe touro mecânico?**
-Cabe o modelo infantil, com folga marginal. Não cabe o profissional nem o gigante. Confirme medindo no ponto mais baixo do teto (forro, lustre, vigas).
+**Meu salão de festa tem 2,75 m de pé-direito. Cabe touro mecânico?**
+Não cabe nenhum modelo nosso (infantil exige 2,80m, profissional 3,00m, gigante 3,20m). Confirme medindo no ponto mais baixo do teto (forro, lustre, vigas) — se for 2,80m+, o infantil entra no limite.
 
 **E se eu tiver lustre pendurado no centro do salão?**
 Lustre é o ponto mais baixo do teto. Meça até o ponto inferior do lustre, não até o teto liso. Se o lustre cai pra menos de 2,30 m, ou desmonte temporariamente ou escolha outro local de instalação dentro do salão.

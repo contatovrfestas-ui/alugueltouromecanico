@@ -218,7 +218,7 @@ function svgOgDefault({ w = 1200, h = 630 }) {
   <text x="${w / 2}" y="${h / 2 + 90}" text-anchor="middle"
         font-family="Georgia, serif" font-size="22" font-weight="500"
         fill="${COLOR.cremeDark}" letter-spacing="3">
-    LAUDO INMETRO · SEGURO RC · OPERADOR PROFISSIONAL
+    LAUDO ABNT NBR 16.071 · SEGURO RC · OPERADOR
   </text>
 </svg>`;
 }

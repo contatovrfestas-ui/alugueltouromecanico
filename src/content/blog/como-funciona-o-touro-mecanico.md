@@ -30,7 +30,7 @@ A **vantagem do hidráulico sobre o elétrico direto**: torque alto e movimento 
 Equipamento profissional moderno tem geralmente **3 a 5 programas de movimento** pré-instalados, cada um com perfil distinto de aceleração e amplitude:
 
 **Modo Infantil (Programa 1)**
-Velocidade angular **15-30 graus por segundo**. Movimento lento, com pausa breve entre cada deslocamento. Amplitude reduzida (eixo se move 30-50% da capacidade total). Recomendado pra criança de [3-12 anos no modelo infantil](/blog/qual-idade-pode-andar-touro-mecanico/).
+Velocidade angular **15-30 graus por segundo**. Movimento lento, com pausa breve entre cada deslocamento. Amplitude reduzida (eixo se move 30-50% da capacidade total). Recomendado pra criança de [6-12 anos no modelo infantil](/blog/qual-idade-pode-andar-touro-mecanico/).
 
 **Modo Médio (Programa 2)**
 Velocidade angular **30-60 graus por segundo**. Movimento mais decidido, mas ainda controlado. Recomendado pra adolescente ou adulto iniciante. É o modo padrão pra [festa corporativa](/aluguel-touro-mecanico/festa-empresa/).

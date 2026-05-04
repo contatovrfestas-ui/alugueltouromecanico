@@ -6,12 +6,30 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 const posts = (await getCollection('blog'))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
-const title = 'Blog — Aluguel Touro Mecânico Rio';
-const description = 'Guias práticos sobre aluguel de touro mecânico no Rio de Janeiro: preços, regulamentação, segurança, casos reais e dicas pra escolher o modelo certo pro seu evento.';
+const title = 'Blog — Touro Mecânico Rio';
+const description = 'Guias sobre aluguel de touro mecânico no Rio: preços, regulamentação, segurança e casos reais pra escolher o modelo certo.';
 const pageUrl = 'https://alugueltouromecanico.com.br/blog';
+
+const blogSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Blog',
+  '@id': `${pageUrl}#blog`,
+  url: pageUrl,
+  name: title,
+  description,
+  publisher: { '@id': 'https://alugueltouromecanico.com.br#business' },
+  blogPost: posts.map(p => ({
+    '@type': 'BlogPosting',
+    headline: p.data.title,
+    description: p.data.description,
+    datePublished: p.data.pubDate.toISOString(),
+    url: `https://alugueltouromecanico.com.br/blog/${p.id}`,
+  })),
+};
 ---
 
 <BaseLayout {title} {description} canonical={pageUrl}>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(blogSchema)} is:inline />
   <article class="container-prose">
     <Breadcrumbs items={[
       { name: 'Início', url: '/' },

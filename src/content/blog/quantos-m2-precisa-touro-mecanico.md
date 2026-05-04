@@ -8,28 +8,28 @@ tags: ['logística', 'área', 'planejamento', 'NBR-16071']
 relatedEventos: ['festa-junina', 'aniversario-infantil']
 ---
 
-A pergunta vem antes de qualquer outra na consulta de orçamento: **"qual o tamanho do espaço que eu preciso?"**. Resposta direta: depende do modelo, mas tem um número pra você decorar — **mínimo 4 × 4 metros (16 m²) pra modelo infantil**, e pra cima a partir daí. Esse post quebra a área em três zonas (footprint, evacuação NBR, circulação) e mostra a tabela completa.
+A pergunta vem antes de qualquer outra na consulta de orçamento: **"qual o tamanho do espaço que eu preciso?"**. Resposta direta: depende do modelo, mas tem um número pra você decorar — **mínimo 4,5 × 4,5 m (~20 m²) pra modelo infantil**, e pra cima a partir daí. Esse post quebra a área em três zonas (footprint, evacuação NBR, circulação) e mostra a tabela completa.
 
 ## A tabela mestra: o que cada modelo exige
 
-| Modelo | Footprint do equipamento | Área mínima total | Forma ideal |
+| Modelo | Área inflada (colchão) | Footprint total | Forma ideal |
 |--------|---------------------------|---------------------|-------------|
-| [Infantil](/modelos/infantil/) | 3,0 × 3,0 m (colchão de queda) | **3,5 × 3,5 m (12,25 m²)** | quadrada |
-| [Profissional](/modelos/profissional/) | 4,0 × 4,0 m | **5,0 × 5,0 m (25 m²)** | quadrada ou retangular 5×6 |
-| [Gigante](/modelos/gigante/) | 5,0 × 5,0 m | **6,0 × 6,0 m (36 m²)** | quadrada |
+| [Infantil](/modelos/infantil/) | 3,0 × 3,0 m | **4,5 × 4,5 m (20 m²)** | quadrada |
+| [Profissional](/modelos/profissional/) | 5,0 × 5,0 m | **7,0 × 7,0 m (49 m²)** | quadrada ou retangular |
+| [Gigante](/modelos/gigante/) | 6,0 × 6,0 m | **8,0 × 8,0 m (64 m²)** | quadrada |
 
-**Footprint** = área do colchão de queda inflado, pé-direito incluído (ver tabela de [pé-direito por década do prédio Rio](/blog/touro-mecanico-em-apartamento-rio/)).
+**Área inflada** = colchão de queda + base do brinquedo. Pé-direito mínimo: [2,80 m / 3,00 m / 3,20 m respectivamente](/blog/touro-mecanico-em-apartamento-rio/).
 
-**Área mínima total** = footprint + zona de evacuação obrigatória pela [NBR 16071](/blog/seguranca-touro-mecanico-norma-nbr-16071/) (mínimo 80 cm de cada lado entre borda do colchão e qualquer obstáculo).
+**Footprint total** = área inflada + zona de evacuação obrigatória pela [ABNT NBR 16.071](/blog/seguranca-touro-mecanico-norma-nbr-16071/) (mínimo ~75 cm de cada lado entre borda do colchão e qualquer obstáculo).
 
 ## As três zonas que somam pra dar a área total
 
-A área que o equipamento precisa não é só "onde o brinquedo fica". A NBR 16071 e a operação segura exigem 3 zonas concêntricas:
+A área que o equipamento precisa não é só "onde o brinquedo fica". A ABNT NBR 16.071 e a operação segura exigem 3 zonas concêntricas:
 
-**Zona 1 — Footprint do colchão (centro)**
-A superfície inflada onde o touro está montado e o usuário cai. Modelo infantil: 3 × 3 m. Profissional: 4 × 4 m. Gigante: 5 × 5 m.
+**Zona 1 — Área inflada (centro)**
+A superfície inflada onde o touro está montado e o usuário cai. Modelo infantil: 3 × 3 m. Profissional: 5 × 5 m. Gigante: 6 × 6 m.
 
-**Zona 2 — Evacuação NBR (anel externo, mínimo 80 cm)**
+**Zona 2 — Evacuação NBR (anel externo, mínimo ~75 cm)**
 Espaço livre obrigatório em volta do colchão pra evacuação rápida em caso de emergência. Não pode ter móvel, parede, escada, balcão ou caixa de som dentro dessa zona. Em festa privada Rio, o erro mais comum é tentar instalar com **mesa de buffet a 50 cm da borda do colchão** — operador recusa e manda afastar.
 
 **Zona 3 — Circulação de público (área externa do anel, dimensão variável)**
@@ -37,9 +37,9 @@ Zona pra fila esperando, operador trabalhando e família observando. Não tem di
 
 A soma das 3 zonas dá o **total mínimo prático**:
 
-- Modelo infantil: **3,5 × 3,5 m no salão + 2 m de fila lateral = 4 × 6 m (24 m²)** confortável
-- Modelo profissional: **5 × 5 m + 2 m de fila = 5 × 7 m (35 m²)** confortável
-- Modelo gigante: **6 × 6 m + 3 m de fila = 6 × 9 m (54 m²)** confortável
+- Modelo infantil: **4,5 × 4,5 m no salão + 2 m de fila lateral = 4,5 × 6,5 m (~29 m²)** confortável
+- Modelo profissional: **7 × 7 m + 2 m de fila = 7 × 9 m (~63 m²)** confortável
+- Modelo gigante: **8 × 8 m + 3 m de fila = 8 × 11 m (~88 m²)** confortável
 
 ## Salão de festa de prédio do Rio: cabe ou não cabe?
 
@@ -47,12 +47,12 @@ A maior parte dos salões de festa em prédio residencial carioca tem entre **30
 
 | Tamanho típico do salão | Modelo viável | Bairro mais comum |
 |--------------------------|----------------|---------------------|
-| 30-40 m² | infantil apertado | [Copacabana](/copacabana/), [Botafogo](/botafogo/), [Ipanema](/ipanema/) (anos 60-70) |
-| 40-60 m² | infantil confortável + profissional apertado | [Tijuca](/tijuca/), [Vila Isabel](/vila-isabel/), [Méier](/meier/) |
-| 60-100 m² | profissional confortável | [Barra](/barra-da-tijuca/), [Recreio](/recreio/), [Jacarepaguá](/jacarepagua/) |
+| 25-40 m² | infantil apertado | [Copacabana](/copacabana/), [Botafogo](/botafogo/), [Ipanema](/ipanema/) (anos 60-70) |
+| 40-60 m² | infantil confortável | [Tijuca](/tijuca/), [Vila Isabel](/vila-isabel/), [Méier](/meier/) |
+| 60-100 m² | profissional cabe | [Barra](/barra-da-tijuca/), [Recreio](/recreio/), [Jacarepaguá](/jacarepagua/) |
 | 100+ m² | gigante viável | clube, hotel, espaço de evento, casa de festa |
 
-**Regra rápida pra checar:** mede a maior área retangular livre do salão (sem mesa, sem cadeira). Se o menor lado tem pelo menos **3,5 m**, cabe modelo infantil. Se tem **5 m**, cabe profissional. Se tem **6 m**, cabe gigante.
+**Regra rápida pra checar:** mede a maior área retangular livre do salão (sem mesa, sem cadeira). Se o menor lado tem pelo menos **4,5 m**, cabe modelo infantil. Se tem **7 m**, cabe profissional. Se tem **8 m**, cabe gigante.
 
 ## Festa ao ar livre: a área dobra de relevância
 
@@ -88,8 +88,8 @@ Cinco minutos de foto evita o pior cenário: caminhão chegar no dia da festa e 
 
 ## Perguntas frequentes
 
-**Meu salão tem 35 m² mas é em formato retangular 5 × 7 m. Cabe modelo profissional?**
-Cabe. O profissional precisa de 5 × 5 m mínimo, e seu salão tem 5 × 7 m. Sobram 2 m em uma das laterais pra fila. Pé-direito precisa ser de no mínimo 2,80 m.
+**Meu salão tem 49 m² em formato 7 × 7 m. Cabe modelo profissional?**
+Cabe no limite — o profissional ocupa exatamente 7 × 7 m de footprint total. Pra fila confortável, o ideal é ter 7 × 9 m. Pé-direito precisa ser de no mínimo 3,00 m.
 
 **Posso instalar em piso de carpete?**
 Pode, se o carpete é fino e firme. Carpete grosso (mais de 1 cm) não atende, porque a base do equipamento precisa de contato direto com piso firme. Em hotel com salão acarpetado, geralmente o operador retira o carpete na área de instalação ou usa lona protetora dura.

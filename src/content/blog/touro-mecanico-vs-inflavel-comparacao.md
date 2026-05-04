@@ -18,14 +18,14 @@ Esse post mostra a comparação direta nos 7 critérios que importam pra decisã
 |----------|------------------|------------------|
 | **Mecanismo** | hidráulico, motor 1500-2000 W | inflado a ar, sem motor de movimento |
 | **Movimento** | 6 eixos programáveis (1-5 modos) | balanço passivo (impulso do usuário) |
-| **Operador** | obrigatório, certificado NBR 16071 | dispensável (autoatendimento) |
-| **Faixa etária** | 3+ anos (modelo infantil) / 13+ adulto | 4-12 anos predominantemente |
+| **Operador** | obrigatório, certificado ABNT NBR 16.071 | dispensável (autoatendimento) |
+| **Faixa etária** | 6+ anos (infantil) / 14+ adulto (profissional/gigante) | 4-12 anos predominantemente |
 | **Custo aluguel/dia** | R$ 800-2.500 dependendo modelo | R$ 200-500 |
-| **Espaço necessário** | 4-6 m² + evacuação 80 cm | 3-4 m² simples |
-| **Pé-direito mínimo** | 2,30-3,20 m | 2,20 m geral |
+| **Espaço necessário** | 4,5-8 m de lado + evacuação | 3-4 m simples |
+| **Pé-direito mínimo** | 2,80-3,20 m | 2,20 m geral |
 | **Drama visual** | alto (movimento real, queda no colchão) | baixo (movimento passivo) |
 | **Tempo de operação** | 2-6h pacote padrão | a festa toda (sem operador) |
-| **Risco operacional** | regulamentado por NBR 16071 | mais baixo, mas sem norma específica |
+| **Risco operacional** | regulamentado por ABNT NBR 16.071 | mais baixo, mas sem norma específica |
 | **Público típico** | adulto + criança 6+ | criança pequena predominantemente |
 
 ## Movimento: a diferença fundamental
@@ -101,10 +101,10 @@ A separação física (15-20 m de distância, áreas distintas, talvez horários
 
 Em ordem:
 
-1. **Qual a idade média do público?** Até 10 anos → inflável. Mistura → mecânico (modelo profissional cobre 6+). Adulto → mecânico.
+1. **Qual a idade média do público?** Até 10 anos → inflável. Mistura → mecânico infantil (6+). Adulto → mecânico profissional/gigante (14+).
 2. **Qual o orçamento total da atração?** Abaixo de R$ 500 → inflável. R$ 800+ → mecânico viável.
 3. **Você quer atração principal ou secundária?** Principal → mecânico. Secundária junto a outras → pode ser inflável.
-4. **O local tem pé-direito 2,30 m+ e área 16 m²+?** Sim → mecânico cabe. Não → inflável é a saída.
+4. **O local tem pé-direito 2,80 m+ e área 20 m²+?** Sim → mecânico cabe. Não → inflável é a saída.
 
 ## Perguntas frequentes
 

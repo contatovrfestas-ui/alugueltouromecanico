@@ -41,9 +41,9 @@ export function montarPagina(i: FactoryInput): IPagina {
   const c = (idx: number) => casos[idx] || { data: '', local: '', descricao: '' };
 
   const titleDefault = `Touro Mecânico ${b.nome} — ${e.nome} 2026`;
-  const descDefault = `Touro mecânico ${modelo} para ${e.nome.toLowerCase()} em ${b.nome}, Rio de Janeiro. Laudo INMETRO, seguro de RC, operador profissional incluso.`;
+  const descDefault = `Touro mecânico ${modelo} para ${e.nome.toLowerCase()} em ${b.nome}, Rio de Janeiro. Laudo ABNT NBR 16.071, seguro de RC, operador profissional incluso.`;
   const h1Default = `Aluguel de Touro Mecânico em ${b.nome} — ${e.nome}`;
-  const subtitleDefault = `Touro mecânico ${modelo} para ${e.nome.toLowerCase()} em ${b.nome} e bairros próximos. Saída do depósito em Méier, entrega em ${b.tempo_entrega_min}–${b.tempo_entrega_max} minutos. Laudo INMETRO NBR 16.071, seguro de RC R$ 300.000, operador profissional.`;
+  const subtitleDefault = `Touro mecânico ${modelo} para ${e.nome.toLowerCase()} em ${b.nome} e bairros próximos. Saída do depósito em Méier, entrega em ${b.tempo_entrega_min}–${b.tempo_entrega_max} minutos. Laudo ABNT NBR 16.071, seguro de RC R$ 300.000, operador profissional.`;
 
   return {
     slug_total: `${i.bairro}/${i.evento}`,

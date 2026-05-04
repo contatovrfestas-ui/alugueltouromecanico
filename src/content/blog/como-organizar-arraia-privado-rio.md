@@ -61,7 +61,7 @@ Orçamento: R$ 35-50 por pessoa em comida + bebida tradicional, sem contar barbe
 
 Em festa privada com touro mecânico, a empresa de aluguel deve entregar:
 
-- Laudo INMETRO NBR 16.071 atualizado
+- Laudo ABNT NBR 16.071 atualizado
 - ART do operador (CREA-RJ)
 - Apólice de seguro de responsabilidade civil (mínimo R$ 100.000)
 - Atestado de manutenção mensal
@@ -78,7 +78,7 @@ Em arraiá com forró ao vivo ou DJ, parar até as 23h em sábado é o seguro. D
 
 ## 8. Plano B pra chuva
 
-Pelo regulamento INMETRO NBR 16.071, **brinquedo inflável não opera em chuva forte ou vento acima de 40 km/h**. Empresa séria reagenda sem custo em caso de alerta laranja Climatempo/INMET com 24h de antecedência.
+Pelo regulamento ABNT NBR 16.071, **brinquedo inflável não opera em chuva forte ou vento acima de 40 km/h**. Empresa séria reagenda sem custo em caso de alerta laranja Climatempo/INMET com 24h de antecedência.
 
 Em festa coberta (toldo, salão), checagem prévia: pé-direito mínimo 3m pro touro profissional, 2,80m pro infantil.
 

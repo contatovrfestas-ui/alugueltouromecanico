@@ -12,10 +12,10 @@ export const PAGINA_TIJUCA_FESTA_JUNINA: IPagina = {
 
   title: 'Touro Mecânico Tijuca — Festa Junina 2026',
   description:
-    'Touro mecânico para arraiás privados na Tijuca, Vila Isabel e Grajaú. Laudo INMETRO NBR 16.071, seguro RC, entrega 22 min do depósito Méier.',
+    'Touro mecânico para arraiás privados na Tijuca, Vila Isabel e Grajaú. Laudo ABNT NBR 16.071, seguro RC, entrega 22 min do depósito Méier.',
   h1: 'Aluguel de Touro Mecânico na Tijuca para Festa Junina',
   subtitle:
-    'Touro mecânico inflável e profissional para arraiás, festas juninas privadas e eventos corporativos na Tijuca (148.383 habitantes, Censo IBGE 2022 — um dos 10 bairros mais populosos do Brasil), Vila Isabel e Grajaú. Saída do depósito em Méier, entrega em até 25 minutos no horário ideal, laudo INMETRO NBR 16.071 atualizado em janeiro/2026.',
+    'Touro mecânico inflável e profissional para arraiás, festas juninas privadas e eventos corporativos na Tijuca (148.383 habitantes, Censo IBGE 2022 — um dos 10 bairros mais populosos do Brasil), Vila Isabel e Grajaú. Saída do depósito em Méier, entrega em até 25 minutos no horário ideal, laudo ABNT NBR 16.071 atualizado em janeiro/2026.',
 
   // Casos vazios até confirmar com Victor o inventário real de touro
   caso1_data: '', caso1_local: '', caso1_descricao: '',
@@ -28,7 +28,7 @@ export const PAGINA_TIJUCA_FESTA_JUNINA: IPagina = {
 
   faq1_pergunta: 'E se chover no sábado de festa junina na Tijuca?',
   faq1_resposta:
-    'Em caso de alerta laranja Climatempo/INMET com 24h de antecedência pra região da Tijuca, reagendamos sem custo pra qualquer fim de semana de junho/julho/agosto. Se a chuva começar durante o evento, paramos a operação por norma INMETRO 7.3 — o restante do tempo contratado vira crédito pra outra data. Política em linha com o Procon-RJ.',
+    'Em caso de alerta laranja Climatempo/INMET com 24h de antecedência pra região da Tijuca, reagendamos sem custo pra qualquer fim de semana de junho/julho/agosto. Se a chuva começar durante o evento, paramos a operação por norma ABNT NBR 16.071 seção 7.3 — o restante do tempo contratado vira crédito pra outra data. Política em linha com o Procon-RJ.',
 
   faq2_pergunta: 'Cabe no salão de festa do prédio na Saens Peña?',
   faq2_resposta:

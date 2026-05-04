@@ -1,6 +1,6 @@
 # Aluguel Touro Mecânico
 
-> Operadora de aluguel de touro mecânico no Rio de Janeiro. Atende festa junina, formatura, aniversário infantil, casamento e evento corporativo em todos os bairros da capital. Trabalha com 3 modelos: infantil (3x3m, idade 6+), profissional (5x5m, idade 14+) e gigante (6x6m, idade 14+). Documentação completa: laudo INMETRO NBR 16.071, ART do operador no CREA-RJ, seguro de responsabilidade civil R$ 300.000.
+> Operadora de aluguel de touro mecânico no Rio de Janeiro. Atende festa junina, formatura, aniversário infantil, casamento e evento corporativo em todos os bairros da capital. Trabalha com 3 modelos: infantil (3x3m, idade 6+), profissional (5x5m, idade 14+) e gigante (6x6m, idade 14+). Documentação completa: laudo ABNT NBR 16.071, ART do operador no CREA-RJ, seguro de responsabilidade civil R$ 300.000.
 
 ## Páginas principais
 - [Home](https://alugueltouromecanico.com.br/): visão geral

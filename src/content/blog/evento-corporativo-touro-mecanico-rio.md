@@ -9,7 +9,7 @@ relatedEventos: ['festa-empresa']
 relatedBairros: ['barra-da-tijuca', 'centro', 'tijuca']
 ---
 
-Touro mecânico vira atração-âncora em três cenários corporativos no Rio de Janeiro: **confraternização de fim de ano, evento de integração de equipe, e ativação de marca em feira ou stand**. Em todos, a documentação completa (laudo INMETRO + ART + apólice RC R$ 300.000) é pré-requisito — empresa de RH e jurídico não fecham contrato sem.
+Touro mecânico vira atração-âncora em três cenários corporativos no Rio de Janeiro: **confraternização de fim de ano, evento de integração de equipe, e ativação de marca em feira ou stand**. Em todos, a documentação completa (laudo ABNT NBR 16.071 + ART + apólice RC R$ 300.000) é pré-requisito — empresa de RH e jurídico não fecham contrato sem.
 
 Esse texto cobre os 3 casos com detalhe operacional e fiscal.
 
@@ -48,7 +48,7 @@ Ativação de marca exige **kit visual** (logo grande, banners do entorno) + 1 f
 
 RH e Jurídico de empresa média/grande costumam exigir:
 
-1. **Laudo INMETRO NBR 16.071** atualizado anualmente
+1. **Laudo ABNT NBR 16.071** atualizado anualmente
 2. **ART do operador** registrada no CREA-RJ
 3. **Apólice de seguro de responsabilidade civil R$ 300.000+** com cláusula de cobertura no espaço do evento
 4. **Atestado de manutenção mensal** do equipamento
