@@ -25,6 +25,9 @@ const fullTitle = /touro mec[âa]nico/i.test(title)
   : `${title} | Aluguel Touro Mecânico`;
 
 const canonicalUrl = canonical || new URL(Astro.url.pathname, NAP.url).href;
+
+const GA4_ID = 'G-FGC80F6K5V';
+const isProd = import.meta.env.PROD;
 ---
 <!doctype html>
 <html lang="pt-BR">
@@ -61,6 +64,18 @@ const canonicalUrl = canonical || new URL(Astro.url.pathname, NAP.url).href;
   <meta name="twitter:image" content={new URL(ogImage, NAP.url).href} />
 
   <slot name="head" />
+
+  {isProd && (
+    <>
+      <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`}></script>
+      <script is:inline define:vars={{ GA4_ID }}>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', GA4_ID);
+      </script>
+    </>
+  )}
 </head>
 <body>
   <Header />
