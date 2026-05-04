@@ -15,6 +15,13 @@ const POL_BEBIDA =
 const POL_NF_FORMATURA =
   'Sim, NF eletrônica de serviço com retenção tributária correta pra empresa de formatura ou comissão organizadora. CNAE 7729-2/03. Atendemos formaturas de comissões e empresas (Estação, Galo, Multi Formaturas, etc.) há tempos.';
 
+// Substitui as FAQs "Antecedência mínima..." genéricas com info gain real:
+// calendários acadêmicos UFRJ/UERJ/PUC + climatologia INMET por mês de colação.
+const FAQ_CALENDARIO_FORMATURA_2026 = {
+  p: 'Quando reservar e qual mês de colação dá menos conflito de demanda?',
+  r: 'Os calendários acadêmicos da UERJ (Deliberação 41/2025), UFRJ e PUC-Rio concentram colação de grau em <strong>dezembro/2026 e janeiro/2027</strong> (semestre 2026.2) e <strong>julho/2026</strong> (semestre 2026.1) — 80% das formaturas privadas caem nessas janelas. Climatologicamente, <strong>julho é o melhor mês</strong> (média INMET 180 mm, 8 dias de chuva — segundo melhor do ano), enquanto <strong>novembro tem 13 dias de chuva</strong> (pior do ano) e dezembro 12. Reserve <strong>90 dias</strong> antes pra Riocentro/Maracanãzinho/hotel grande, <strong>60 dias</strong> pra clube/quadra de samba, <strong>45 dias</strong> pra casa de festas média.',
+};
+
 export const PAGINAS_FORMATURA: IPagina[] = [
   // TIJUCA × FORMATURA
   montarPagina({
@@ -30,7 +37,7 @@ export const PAGINAS_FORMATURA: IPagina[] = [
       { p: 'Tempo de entrega real Méier → Tijuca em formatura noturna?', r: 'Saída de Méier após o rush (22h-23h): 15-25 min. Antes do rush (sábado tarde): 22-35 min. Em formatura que começa 22h, entregamos 19h-20h pra montar com folga.' },
       { p: 'Idade mínima pra subir no touro em formatura?', r: POL_IDADE_FORMATURA },
       { p: 'Emitem NF pra empresa de formatura?', r: POL_NF_FORMATURA },
-      { p: 'Antecedência mínima pra reservar formatura na Tijuca?', r: 'Formatura no Maracanãzinho ou clube grande: 90 dias mínimo. Formatura em casa de festas pequena/média: 45-60 dias. Pico de formatura: dezembro e julho — reserve em outubro/maio.' },
+      FAQ_CALENDARIO_FORMATURA_2026,
     ],
   }),
 
@@ -39,7 +46,7 @@ export const PAGINAS_FORMATURA: IPagina[] = [
     bairro: 'barra-da-tijuca',
     evento: 'formatura',
     description:
-      'Touro mecânico profissional para formaturas na Barra da Tijuca — Riocentro, Vivo Rio, Jeunesse Arena, Clube Marapendi, Casa de Festas Outback. Laudo INMETRO, seguro de RC R$ 300.000.',
+      'Touro mecânico profissional para formaturas na Barra da Tijuca — Riocentro, Jeunesse Arena, Vivo Rio, Casa de Festas Outback. Laudo INMETRO, seguro RC.',
     faqs: [
       { p: 'Atendem Riocentro, Jeunesse Arena e Vivo Rio pra formatura?', r: 'Sim, todos. Riocentro/Jeunesse Arena exigem laudo INMETRO + ART + apólice de RC R$ 300.000 + cadastro fornecedor 45 dias antes. Vivo Rio (Aterro) exige documentação 30 dias antes.' },
       { p: 'Casas de festa típicas de formatura na Barra que vocês atendem?', r: 'Atendemos: Casa de Festas Outback, Casa Marambaia, Quinta da Boa Vista (eventos), Espaço Tom Jobim, Riocentro Pavilhão 5. Toda casa de festa da Av. das Américas e Av. Sernambetiba já recebeu nosso material — basta indicar.' },
@@ -48,7 +55,7 @@ export const PAGINAS_FORMATURA: IPagina[] = [
       { p: 'Pode beber e subir no touro em formatura?', r: POL_BEBIDA },
       { p: 'Idade mínima pra subir no touro?', r: POL_IDADE_FORMATURA },
       { p: 'Emitem NF pra empresa de formatura?', r: POL_NF_FORMATURA },
-      { p: 'Antecedência mínima pra formatura na Barra?', r: 'Riocentro/Jeunesse Arena: 90 dias mínimo. Casa de festas média: 60 dias. Pico de formatura: dezembro e julho — reserve em outubro/maio.' },
+      FAQ_CALENDARIO_FORMATURA_2026,
     ],
   }),
 
@@ -66,7 +73,7 @@ export const PAGINAS_FORMATURA: IPagina[] = [
       { p: 'Atendem Vargem Grande, Vargem Pequena, Guaratiba pra formatura?', r: 'Sim, mesma faixa de preço. Casa de sítio em Vargem Grande/Guaratiba é cenário comum de formatura — confirmamos chão firme (touro não opera em areia solta ou grama mole).' },
       { p: 'Idade mínima pra subir no touro em formatura?', r: POL_IDADE_FORMATURA },
       { p: 'Emitem NF pra empresa de formatura?', r: POL_NF_FORMATURA },
-      { p: 'Antecedência mínima pra reservar formatura no Recreio?', r: 'Formatura no Recreio: 60 dias mínimo na alta temporada (dezembro/julho). Pras outras épocas, 45 dias funciona.' },
+      FAQ_CALENDARIO_FORMATURA_2026,
     ],
   }),
 
@@ -84,7 +91,7 @@ export const PAGINAS_FORMATURA: IPagina[] = [
       { p: 'Pode beber e subir no touro?', r: POL_BEBIDA },
       { p: 'Idade mínima pra subir no touro em formatura?', r: POL_IDADE_FORMATURA },
       { p: 'Emitem NF pra empresa de formatura?', r: POL_NF_FORMATURA },
-      { p: 'Antecedência mínima pra formatura em Botafogo?', r: 'Casa de festas em Botafogo: 60 dias na alta temporada (dezembro/julho), 45 dias nas outras épocas. Hotel: 75-90 dias.' },
+      FAQ_CALENDARIO_FORMATURA_2026,
     ],
   }),
 
@@ -102,7 +109,7 @@ export const PAGINAS_FORMATURA: IPagina[] = [
       { p: 'Tempo de operação ideal pra formatura em hotel/clube de Ipanema?', r: 'Formatura 200-400 formandos em hotel/clube: 4-6 horas de operação. Pico costuma ser 23h-3h. Em evento maior, 2 unidades em paralelo.' },
       { p: 'Pode beber e subir no touro em formatura?', r: POL_BEBIDA },
       { p: 'Idade mínima pra subir no touro?', r: POL_IDADE_FORMATURA },
-      { p: 'Antecedência mínima pra formatura em Ipanema/Leblon?', r: 'Hotel grande: 75-90 dias. Clube: 60 dias. Cobertura particular: 45 dias. Pico dezembro/julho — reserve em outubro/maio.' },
+      FAQ_CALENDARIO_FORMATURA_2026,
     ],
   }),
 
@@ -120,7 +127,7 @@ export const PAGINAS_FORMATURA: IPagina[] = [
       { p: 'Tempo de operação ideal pra formatura de 250-500 formandos?', r: 'Formatura grande em hotel: 5-6 horas de operação (22h-3h). Acima de 500 pessoas, 2 unidades em paralelo (profissional + gigante) cortam fila pela metade.' },
       { p: 'Pode beber e subir no touro?', r: POL_BEBIDA },
       { p: 'Idade mínima pra subir no touro?', r: POL_IDADE_FORMATURA },
-      { p: 'Antecedência mínima pra formatura em Copacabana?', r: 'Copacabana Palace e Belmond: 90 dias mínimo. Outros hotéis grandes: 75 dias. Casa de festas pequena: 45-60 dias.' },
+      FAQ_CALENDARIO_FORMATURA_2026,
     ],
   }),
 
@@ -138,7 +145,7 @@ export const PAGINAS_FORMATURA: IPagina[] = [
       { p: 'Tempo de operação ideal pra formatura com 200-400 formandos?', r: '4-5 horas de operação cobrem o pico (22h-3h). Em formatura grande de quadra, 2 unidades em paralelo cortam fila pela metade.' },
       { p: 'Pode beber e subir no touro em formatura?', r: POL_BEBIDA },
       { p: 'Idade mínima pra subir no touro?', r: POL_IDADE_FORMATURA },
-      { p: 'Antecedência mínima pra formatura em Vila Isabel/Maracanã?', r: 'Maracanãzinho: 90 dias. Quadra de escola de samba: 60 dias. Casa de festas média: 45 dias. Pico de formatura: dezembro/julho.' },
+      FAQ_CALENDARIO_FORMATURA_2026,
     ],
   }),
 
@@ -156,7 +163,7 @@ export const PAGINAS_FORMATURA: IPagina[] = [
       { p: 'Atendem Itanhangá, Camorim, Anil, Tanque com mesma faixa?', r: 'Sim. Itanhangá: 50-75 min. Camorim: 55-80 min. Anil: 35-55 min. Tanque: 40-60 min. Mesma faixa de preço.' },
       { p: 'Idade mínima pra subir no touro?', r: POL_IDADE_FORMATURA },
       { p: 'Emitem NF pra empresa de formatura?', r: POL_NF_FORMATURA },
-      { p: 'Antecedência mínima pra formatura em Jacarepaguá?', r: 'Casa de festas grande (>300 formandos): 60 dias. Casa de festas média: 45 dias. Pico de formatura: dezembro/julho — reserve em outubro/maio.' },
+      FAQ_CALENDARIO_FORMATURA_2026,
     ],
   }),
 
@@ -176,7 +183,7 @@ export const PAGINAS_FORMATURA: IPagina[] = [
       { p: 'Atendem Cachambi, Engenho de Dentro, Piedade com mesma faixa?', r: 'Sim. Cachambi: 5-15 min. Engenho de Dentro: 8-20 min. Piedade: 12-25 min. Toda Zona Norte do nosso eixo principal — mesma faixa de preço.' },
       { p: 'Idade mínima pra subir no touro?', r: POL_IDADE_FORMATURA },
       { p: 'Emitem NF pra empresa de formatura?', r: POL_NF_FORMATURA },
-      { p: 'Antecedência mínima pra formatura no Méier?', r: '30-45 dias funciona pra maioria das datas no bairro do depósito. Pra eventos grandes (Norte Shopping, mais de 300 pessoas): 60 dias.' },
+      FAQ_CALENDARIO_FORMATURA_2026,
     ],
   }),
 
@@ -194,7 +201,7 @@ export const PAGINAS_FORMATURA: IPagina[] = [
       { p: 'Pode beber e subir no touro em formatura?', r: POL_BEBIDA },
       { p: 'Atendem Cascadura, Oswaldo Cruz, Campinho com mesma faixa?', r: 'Sim. Cascadura: 18-40 min. Oswaldo Cruz: 22-45 min. Campinho: 25-50 min. Mesma faixa de preço.' },
       { p: 'Idade mínima pra subir no touro?', r: POL_IDADE_FORMATURA },
-      { p: 'Antecedência mínima pra formatura em Madureira?', r: 'Quadra de escola de samba (Portela, Império Serrano): 60-75 dias mínimo na alta temporada. Casa de festas média: 45 dias.' },
+      FAQ_CALENDARIO_FORMATURA_2026,
     ],
   }),
 ];

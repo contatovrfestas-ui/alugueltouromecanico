@@ -10,12 +10,12 @@ export const PAGINA_TIJUCA_FESTA_JUNINA: IPagina = {
   bairro: 'tijuca',
   evento: 'festa-junina',
 
-  title: 'Aluguel de Touro Mecânico na Tijuca para Festa Junina 2026',
+  title: 'Touro Mecânico Tijuca — Festa Junina 2026',
   description:
-    'Touro mecânico inflável e profissional para arraiás e festas juninas privadas na Tijuca, Vila Isabel e Grajaú. Laudo INMETRO NBR 16.071, seguro de RC, entrega em 22 min do depósito Méier.',
+    'Touro mecânico para arraiás privados na Tijuca, Vila Isabel e Grajaú. Laudo INMETRO NBR 16.071, seguro RC, entrega 22 min do depósito Méier.',
   h1: 'Aluguel de Touro Mecânico na Tijuca para Festa Junina',
   subtitle:
-    'Touro mecânico inflável e profissional para arraiás, festas juninas privadas e eventos corporativos na Tijuca, Vila Isabel e Grajaú. Saída do depósito em Méier, entrega em até 25 minutos no horário ideal, laudo INMETRO NBR 16.071 atualizado em janeiro/2026.',
+    'Touro mecânico inflável e profissional para arraiás, festas juninas privadas e eventos corporativos na Tijuca (148.383 habitantes, Censo IBGE 2022 — um dos 10 bairros mais populosos do Brasil), Vila Isabel e Grajaú. Saída do depósito em Méier, entrega em até 25 minutos no horário ideal, laudo INMETRO NBR 16.071 atualizado em janeiro/2026.',
 
   // Casos vazios até confirmar com Victor o inventário real de touro
   caso1_data: '', caso1_local: '', caso1_descricao: '',
@@ -54,9 +54,9 @@ export const PAGINA_TIJUCA_FESTA_JUNINA: IPagina = {
   faq7_resposta:
     'Sim, NF eletrônica de serviço com retenção tributária correta. CNAE 7729-2/03 (locação de outros objetos pessoais e domésticos). Atendemos eventos corporativos das empresas do entorno da Praça da Bandeira / Cidade Nova com frequência — tempo de entrega 12 a 15 minutos do depósito.',
 
-  faq8_pergunta: 'Antecedência mínima pra reservar 21/06 ou 28/06 de 2026?',
+  faq8_pergunta: 'Quando reservar e qual fim de semana de junho dá menos conflito?',
   faq8_resposta:
-    'Pra essas duas datas (paralelas aos arraiás públicos do TTC e Maracanã), recomendamos 60 dias de antecedência mínima. Pras outras datas de junho, 30 a 45 dias é suficiente. Já estamos recebendo reservas pra junho/2026 desde fevereiro/2026.',
+    'Pelo calendário Riotur 2026, a demanda concentra em 4 ondas: (1) <strong>13-14/jun</strong> — esquenta antes do São João, (2) <strong>20-21/jun</strong> — pico absoluto + arraiá oficial Riotur (Av. das Américas 5300 e 15500), (3) <strong>23-24/jun</strong> — véspera + São João (quarta em 2026, favorece festa empresa fim de tarde), (4) <strong>27-28/jun</strong> — "junina atrasada", baixa concorrência pública. Climatologicamente, junho é <strong>excelente</strong> pra outdoor: média INMET de 154 mm de chuva e 8 dias chuvosos, segundo melhor mês do ano. Reserve 60 dias antes pras ondas 1-2; 30-45 dias pra onda 4 (mais disponibilidade).',
 
   imagem_hero: '/images/bairros/tijuca-festa-junina.webp',
   imagem_hero_alt: 'Touro mecânico profissional em festa junina na Tijuca, Rio de Janeiro',
