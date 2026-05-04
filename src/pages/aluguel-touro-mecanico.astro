@@ -5,10 +5,12 @@ import TabelaModelos from '../components/TabelaModelos.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import SchemaLocalBusiness from '../components/SchemaLocalBusiness.astro';
 import FontesRodape from '../components/FontesRodape.astro';
+import FAQ from '../components/FAQ.astro';
+import type { IFaqItem } from '../lib/schema';
 
-const title = 'Aluguel de Touro Mecânico no Rio de Janeiro — Como Funciona';
+const title = 'Aluguel Touro Mecânico Rio de Janeiro: Guia Completo';
 const description =
-  'Como funciona o aluguel de touro mecânico no Rio de Janeiro: modelos disponíveis, regulamentação, segurança, logística, faixas de preço. Laudo INMETRO NBR 16.071, seguro de RC.';
+  'Como alugar touro mecânico no Rio: modelos, regulamentação NBR 16.071, segurança, faixas de preço (R$ 1.200 a R$ 3.500). Laudo INMETRO e seguro de RC inclusos.';
 const pageUrl = 'https://alugueltouromecanico.com.br/aluguel-touro-mecanico';
 
 const breadcrumbs = [
@@ -21,6 +23,39 @@ const fontes = [
   { nome: 'Lei Municipal RJ 126/77 — Código de Posturas', url: 'https://www.jusbrasil.com.br' },
   { nome: 'Lei Municipal RJ 3.268/01 — Lei do Silêncio', url: 'https://www.jusbrasil.com.br' },
 ];
+
+const faqs: IFaqItem[] = [
+  {
+    pergunta: 'Quanto custa alugar um touro mecânico no Rio de Janeiro?',
+    resposta:
+      'O preço médio de mercado no Rio fica entre R$ 1.200 e R$ 2.200 para 4 a 6 horas de operação, tudo incluso (touro + colchão inflável + montagem + operador). Eventos acima de 200 pessoas ou que exijam 2 unidades passam de R$ 3.500. O valor varia conforme bairro (logística), duração e modelo escolhido. Não cobramos taxa escondida: o orçamento via WhatsApp já contempla transporte, montagem, desmontagem e operador uniformizado.',
+  },
+  {
+    pergunta: 'A partir de que idade pode usar o touro mecânico?',
+    resposta:
+      'A norma <strong>ABNT NBR 16.071:2012</strong> define 5 anos como idade mínima absoluta para uso recreativo, com modelo infantil em velocidade reduzida. Acima de 12 anos liberamos o modo profissional. Para evento adulto (formatura, corporativo) o equipamento opera com curva de dificuldade progressiva de 1 a 9, regulada pelo operador. Bafômetro acima de 0,2 mg/L bloqueia uso — regra fixa do nosso operador independente do contratante.',
+  },
+  {
+    pergunta: 'Que espaço preciso ter para o touro mecânico caber?',
+    resposta:
+      'A arena ocupa 5m × 5m no piso e exige 3m de pé-direito (altura mínima do teto). Salões de festa de prédio com pé-direito padrão 2,80m <strong>não cabem</strong> — nesse caso usamos a versão infantil que ocupa 4m × 4m e 2,40m. Casa, condomínio com área aberta, sítio e maioria dos espaços de festa do Rio comportam o modelo profissional sem ajuste.',
+  },
+  {
+    pergunta: 'Voltagem 110 ou 220? Preciso de gerador?',
+    resposta:
+      'O modelo profissional opera em <strong>220V monofásico, 2 tomadas dedicadas</strong> (não pode dividir circuito com freezer ou som). Casa antiga ou bairro com 110V predominante (parte da Tijuca, Vila Isabel) precisa de gerador 5kVA — fornecemos por R$ 280 adicional/dia. Modelo infantil aceita 110V. Sempre confirmamos voltagem do local antes do evento.',
+  },
+  {
+    pergunta: 'E se chover no dia do evento?',
+    resposta:
+      'A NBR 16.071 proíbe operação com chuva forte ou vento acima de 40 km/h por risco de descontrole do colchão inflável. Se chover, ofereço 2 opções no contrato: (1) remarcação sem multa para outra data dentro de 90 dias, ou (2) montar em ambiente coberto com pé-direito ≥3m no mesmo dia. Garoa fina não impede operação — o colchão é impermeabilizado.',
+  },
+  {
+    pergunta: 'Vocês têm laudo INMETRO e seguro de responsabilidade civil?',
+    resposta:
+      'Sim. Entregamos no momento da reserva: (1) <strong>laudo NBR 16.071</strong> renovado anualmente, (2) <strong>apólice de RC</strong> com cobertura mínima R$ 300.000 (acidente com terceiros durante o evento), (3) ART do operador no CREA-RJ, (4) atestado de manutenção mensal. Empresa que não entrega esses 4 documentos opera ilegalmente — exija sempre.',
+  },
+];
 ---
 
 <BaseLayout {title} {description} canonical={pageUrl}>
@@ -30,6 +65,9 @@ const fontes = [
     pageTitle={title}
     {description}
     breadcrumbs={breadcrumbs}
+    {faqs}
+    precoMin={1200}
+    precoMax={3500}
   />
 
   <article class="container-prose">
@@ -47,6 +85,20 @@ const fontes = [
     <div class="mt-6">
       <CTAWhatsApp />
     </div>
+
+    <h2>Locação de touro mecânico para festas: o que está incluído</h2>
+    <p>
+      Quando você fecha o aluguel (ou locação — usamos os termos como sinônimo) com a gente,
+      o pacote padrão de 4 horas para festa privada no Rio inclui:
+    </p>
+    <ul>
+      <li>Touro mecânico do modelo escolhido (infantil, profissional ou gigante)</li>
+      <li>Colchão inflável de proteção 5×5m em volta do equipamento</li>
+      <li>Painel de controle com 9 níveis de dificuldade ajustável pelo operador</li>
+      <li>Transporte, montagem (~40 min) e desmontagem (~25 min)</li>
+      <li>Operador profissional uniformizado durante toda a operação</li>
+      <li>Laudo NBR 16.071 e apólice de seguro de RC entregues no ato da reserva</li>
+    </ul>
 
     <h2>Modelos disponíveis</h2>
     <TabelaModelos />
@@ -80,6 +132,20 @@ const fontes = [
       <li>Certificado de operador treinado presente toda a operação</li>
     </ol>
 
+    <h2>Seguro de responsabilidade civil: por que isso importa</h2>
+    <p>
+      Touro mecânico é equipamento que envolve queda controlada — o colchão inflável atenua,
+      mas escoriação leve, torção de tornozelo ou ombro deslocado entram na estatística.
+      Em festa privada, a responsabilidade pelo dano cai no contratante se a empresa de aluguel
+      não tiver apólice ativa. Por isso operamos com <strong>seguro de RC com cobertura R$ 300.000</strong>
+      (acidente com terceiros durante o evento), apólice nominal a cada festa.
+      Empresa que não apresenta a apólice no momento da reserva não tem cobertura — ponto.</p>
+    <p>
+      Pedimos também ao contratante a confirmação de que o local do evento autorizou o uso
+      de equipamento inflável (regra interna de condomínio, salão alugado, sítio). Esse alinhamento
+      vale mais do que qualquer cláusula contratual.
+    </p>
+
     <h2>Faixas de preço (4h de operação, tudo incluso)</h2>
     <table>
       <thead>
@@ -92,6 +158,8 @@ const fontes = [
         <tr><td>Festa empresa 200+</td><td>Gigante + atração extra</td><td>R$ 4.000+</td></tr>
       </tbody>
     </table>
+
+    <FAQ items={faqs} />
 
     <section class="bg-rodeio-creme py-8 my-10 -mx-4 md:-mx-6 px-4 md:px-6 rounded text-center">
       <h2 class="!mt-0">Pronto pra reservar?</h2>
