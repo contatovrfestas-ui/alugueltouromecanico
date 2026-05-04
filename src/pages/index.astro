@@ -1,0 +1,126 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CTAWhatsApp from '../components/CTAWhatsApp.astro';
+import TabelaModelos from '../components/TabelaModelos.astro';
+import SchemaLocalBusiness from '../components/SchemaLocalBusiness.astro';
+
+const title = 'Aluguel Touro Mecânico no Rio de Janeiro';
+const description =
+  'Touro mecânico para festa junina, formatura, aniversário e evento corporativo no Rio de Janeiro. Laudo INMETRO, seguro de RC, operador profissional. Entrega em todos os bairros do Rio.';
+
+const breadcrumbs = [{ name: 'Início', url: 'https://alugueltouromecanico.com.br/' }];
+
+const bairrosDestaque = [
+  { slug: 'tijuca', nome: 'Tijuca' },
+  { slug: 'barra-da-tijuca', nome: 'Barra da Tijuca' },
+  { slug: 'copacabana', nome: 'Copacabana' },
+  { slug: 'botafogo', nome: 'Botafogo' },
+  { slug: 'recreio', nome: 'Recreio' },
+  { slug: 'jacarepagua', nome: 'Jacarepaguá' },
+  { slug: 'vila-isabel', nome: 'Vila Isabel' },
+  { slug: 'ipanema', nome: 'Ipanema' },
+  { slug: 'meier', nome: 'Méier' },
+  { slug: 'madureira', nome: 'Madureira' },
+];
+
+const eventosDestaque = [
+  { slug: 'festa-junina', nome: 'Festa Junina' },
+  { slug: 'formatura', nome: 'Formatura' },
+  { slug: 'aniversario-infantil', nome: 'Aniversário Infantil' },
+  { slug: 'aniversario-18', nome: 'Aniversário 18 anos' },
+  { slug: 'festa-empresa', nome: 'Festa de Empresa' },
+  { slug: 'casamento', nome: 'Casamento' },
+];
+---
+
+<BaseLayout {title} {description}>
+  <SchemaLocalBusiness
+    slot="head"
+    pageUrl="https://alugueltouromecanico.com.br/"
+    pageTitle={title}
+    {description}
+    breadcrumbs={breadcrumbs}
+  />
+
+  <section class="bg-rodeio-couro text-rodeio-creme py-12 md:py-20">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <span class="badge-dourado mb-4">Rio de Janeiro · Capital</span>
+      <h1 class="!text-rodeio-creme mb-4">Aluguel de Touro Mecânico no Rio de Janeiro</h1>
+      <p class="text-lg md:text-xl text-rodeio-creme-dark max-w-2xl mx-auto mb-8">
+        Touro mecânico profissional para festa junina, formatura, aniversário e evento corporativo
+        em todos os bairros do Rio. Laudo INMETRO, seguro de RC e operador presente toda a festa.
+      </p>
+      <div class="flex flex-wrap justify-center gap-3">
+        <CTAWhatsApp texto="📱 Pedir orçamento agora" />
+        <a href="/aluguel-touro-mecanico" class="btn-secondary">Como funciona</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-prose">
+    <h2>Modelos disponíveis</h2>
+    <p>
+      Três tamanhos pra atender desde festa de criança até evento corporativo de 300 pessoas.
+      Confira as dimensões antes de fechar — se cabe no salão, a gente entrega.
+    </p>
+    <TabelaModelos />
+    <div class="grid md:grid-cols-3 gap-4 mt-6">
+      <a href="/modelos/infantil" class="block p-4 bg-white rounded border-2 border-rodeio-creme-dark hover:border-rodeio-terra no-underline">
+        <h3 class="!mt-0 !mb-1">Infantil</h3>
+        <p class="text-sm text-rodeio-cinza-rustico m-0">3m × 3m · até 60kg · 6+ anos</p>
+      </a>
+      <a href="/modelos/profissional" class="block p-4 bg-white rounded border-2 border-rodeio-creme-dark hover:border-rodeio-terra no-underline">
+        <h3 class="!mt-0 !mb-1">Profissional</h3>
+        <p class="text-sm text-rodeio-cinza-rustico m-0">5m × 5m · até 120kg · 14+ anos</p>
+      </a>
+      <a href="/modelos/gigante" class="block p-4 bg-white rounded border-2 border-rodeio-creme-dark hover:border-rodeio-terra no-underline">
+        <h3 class="!mt-0 !mb-1">Gigante</h3>
+        <p class="text-sm text-rodeio-cinza-rustico m-0">6m × 6m · até 150kg · evento corporativo</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="container-prose">
+    <h2>Bairros que atendemos</h2>
+    <p>
+      Saímos diariamente para os principais bairros da capital. Veja o tempo de entrega,
+      restrições logísticas, salões compatíveis e calendário de eventos do seu bairro.
+    </p>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 mt-6">
+      {bairrosDestaque.map(b => (
+        <a
+          href={`/${b.slug}`}
+          class="block px-4 py-3 bg-white rounded border border-rodeio-creme-dark hover:border-rodeio-terra hover:bg-rodeio-creme no-underline text-center"
+        >
+          <span class="font-title text-rodeio-couro">{b.nome}</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="container-prose">
+    <h2>Tipos de evento</h2>
+    <p>
+      Cada evento tem sua particularidade. Veja o guia específico do seu evento para entender
+      modelo recomendado, calendário, regulamentação e logística.
+    </p>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-3 mt-6">
+      {eventosDestaque.map(e => (
+        <a
+          href={`/blog/${e.slug}`}
+          class="block px-4 py-3 bg-white rounded border border-rodeio-creme-dark hover:border-rodeio-terra hover:bg-rodeio-creme no-underline text-center"
+        >
+          <span class="font-title text-rodeio-couro">{e.nome}</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="bg-rodeio-creme py-12">
+    <div class="container-prose text-center">
+      <h2>Pronto pra reservar?</h2>
+      <p>Mande no WhatsApp: endereço, data, estimativa de público e foto/medidas do espaço.<br/>Resposta com orçamento em até 2h em horário comercial.</p>
+      <CTAWhatsApp texto="📱 Falar no WhatsApp" />
+    </div>
+  </section>
+</BaseLayout>

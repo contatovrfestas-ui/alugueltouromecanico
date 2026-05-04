@@ -1,0 +1,20 @@
+---
+import PaginaGeo from '../../layouts/PaginaGeo.astro';
+import { getPaginasData, getBairroBySlugData, getEventoBySlugData } from '../../lib/data-source';
+
+export async function getStaticPaths() {
+  const paginas = await getPaginasData();
+  return Promise.all(paginas.map(async (pagina) => {
+    const bairro = await getBairroBySlugData(pagina.bairro);
+    const evento = await getEventoBySlugData(pagina.evento);
+    return {
+      params: { bairro: pagina.bairro, evento: pagina.evento },
+      props: { pagina, bairro, evento },
+    };
+  }));
+}
+
+const { pagina, bairro, evento } = Astro.props;
+---
+
+<PaginaGeo {pagina} {bairro} {evento} />

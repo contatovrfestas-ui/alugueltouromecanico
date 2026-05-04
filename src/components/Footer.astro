@@ -1,0 +1,49 @@
+---
+import { NAP } from '../lib/nap';
+import { whatsappUrl } from '../lib/whatsapp';
+const wa = whatsappUrl();
+const ano = new Date().getFullYear();
+---
+
+<footer class="bg-rodeio-preto text-rodeio-creme mt-16 border-t-4 border-rodeio-dourado">
+  <div class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-3 gap-8">
+    <div>
+      <div class="flex items-center gap-3 mb-4">
+        <img src="/images/logo/logo-icon.svg" alt="" width="40" height="40" />
+        <strong class="font-title text-lg text-rodeio-creme">Aluguel Touro Mecânico</strong>
+      </div>
+      <p class="text-sm text-rodeio-creme-dark leading-relaxed">
+        Touro mecânico profissional para festas, formaturas e eventos corporativos no Rio de Janeiro,
+        com laudo INMETRO, seguro de RC e operador treinado.
+      </p>
+    </div>
+
+    <div>
+      <h4 class="font-title text-rodeio-dourado text-base mb-3">Bairros que atendemos</h4>
+      <ul class="text-sm space-y-1 text-rodeio-creme-dark">
+        <li><a href="/tijuca" class="hover:text-rodeio-dourado">Tijuca</a></li>
+        <li><a href="/barra-da-tijuca" class="hover:text-rodeio-dourado">Barra da Tijuca</a></li>
+        <li><a href="/copacabana" class="hover:text-rodeio-dourado">Copacabana</a></li>
+        <li><a href="/botafogo" class="hover:text-rodeio-dourado">Botafogo</a></li>
+        <li><a href="/recreio" class="hover:text-rodeio-dourado">Recreio</a></li>
+        <li><a href="/sitemap-index.xml" class="hover:text-rodeio-dourado">Ver todos →</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="font-title text-rodeio-dourado text-base mb-3">Contato</h4>
+      <ul class="text-sm space-y-1 text-rodeio-creme-dark">
+        <li><a href={wa} target="_blank" rel="noopener" class="hover:text-rodeio-dourado">📱 WhatsApp</a></li>
+        <li><a href={`mailto:${NAP.email}`} class="hover:text-rodeio-dourado">{NAP.email}</a></li>
+        <li>{NAP.city}/{NAP.state}</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="border-t border-rodeio-cinza-rustico">
+    <div class="max-w-6xl mx-auto px-4 py-4 text-xs text-rodeio-creme-dark flex flex-col md:flex-row justify-between gap-2">
+      <span>© {ano} {NAP.name} {NAP.cnpj && `— CNPJ ${NAP.cnpj}`}</span>
+      <span>Operadora desde {NAP.fundadoEm} · Rio de Janeiro</span>
+    </div>
+  </div>
+</footer>

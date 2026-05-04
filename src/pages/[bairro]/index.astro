@@ -1,0 +1,133 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CTAWhatsApp from '../../components/CTAWhatsApp.astro';
+import TabelaModelos from '../../components/TabelaModelos.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import SchemaLocalBusiness from '../../components/SchemaLocalBusiness.astro';
+import FontesRodape from '../../components/FontesRodape.astro';
+import { getBairrosData, getEventosData, getPaginasData } from '../../lib/data-source';
+
+export async function getStaticPaths() {
+  const bairros = await getBairrosData();
+  return bairros.map(bairro => ({
+    params: { bairro: bairro.slug },
+    props: { bairro },
+  }));
+}
+
+const { bairro } = Astro.props;
+const eventos = await getEventosData();
+const paginas = await getPaginasData();
+
+const paginasDoBairro = paginas.filter(p => p.bairro === bairro.slug);
+
+const title = `Aluguel de Touro Mecânico em ${bairro.nome}, Rio de Janeiro`;
+const description = `Touro mecânico para festa, formatura, aniversário e evento corporativo em ${bairro.nome} e bairros próximos. Entrega em ${bairro.tempo_entrega_min}-${bairro.tempo_entrega_max} min do depósito Méier. Laudo INMETRO, seguro de RC.`;
+const pageUrl = `https://alugueltouromecanico.com.br/${bairro.slug}`;
+
+const breadcrumbs = [
+  { name: 'Início', url: 'https://alugueltouromecanico.com.br/' },
+  { name: bairro.nome, url: pageUrl },
+];
+
+const fontes = [
+  { nome: 'IBGE Censo 2022', url: 'https://sidra.ibge.gov.br' },
+  { nome: 'Lei Municipal RJ 126/77 — Código de Posturas', url: 'https://www.jusbrasil.com.br' },
+  { nome: 'ABNT NBR 16.071:2012', url: 'https://www.abntcatalogo.com.br' },
+];
+---
+
+<BaseLayout {title} {description} canonical={pageUrl}>
+  <SchemaLocalBusiness
+    slot="head"
+    {pageUrl}
+    pageTitle={title}
+    {description}
+    areaServed={[bairro.nome]}
+    breadcrumbs={breadcrumbs}
+  />
+
+  <article class="container-prose">
+    <Breadcrumbs items={breadcrumbs.map((b, i) => ({
+      name: b.name,
+      url: i < breadcrumbs.length - 1 ? b.url : undefined
+    }))} />
+
+    <h1>Aluguel de Touro Mecânico em {bairro.nome}</h1>
+    <p class="text-lg mt-3">
+      Touro mecânico profissional para festa junina, formatura, aniversário e evento corporativo
+      em {bairro.nome}. Entrega em {bairro.tempo_entrega_min}-{bairro.tempo_entrega_max} minutos
+      do depósito Méier, com laudo INMETRO, seguro de RC R$ 300.000 e operador profissional toda a festa.
+    </p>
+    <div class="mt-6">
+      <CTAWhatsApp bairro={bairro.nome} />
+    </div>
+
+    <h2>Sobre {bairro.nome}</h2>
+    <p>
+      {bairro.nome} é bairro da Zona {bairro.zona === 'sul' ? 'Sul' : bairro.zona === 'norte' ? 'Norte' : bairro.zona === 'oeste' ? 'Oeste' : 'Central'}
+      do Rio de Janeiro, com cerca de <strong>{bairro.populacao.toLocaleString('pt-BR')} habitantes</strong> (IBGE Censo 2022).
+      {bairro.restricao_logistica}
+    </p>
+
+    {paginasDoBairro.length > 0 && (
+      <section>
+        <h2>Eventos em {bairro.nome}</h2>
+        <p>Cada tipo de evento tem regulamentação, calendário e logística específica. Veja o guia detalhado:</p>
+        <div class="grid md:grid-cols-2 gap-3 mt-4">
+          {paginasDoBairro.map(p => {
+            const ev = eventos.find(e => e.slug === p.evento);
+            return (
+              <a
+                href={`/${p.slug_total}`}
+                class="block p-4 bg-white rounded border border-rodeio-creme-dark hover:border-rodeio-terra no-underline"
+              >
+                <h3 class="!mt-0 !mb-1">{ev?.nome || p.evento}</h3>
+                <p class="text-sm text-rodeio-cinza-rustico m-0">
+                  A partir de R$ {p.preco_min.toLocaleString('pt-BR')} · {ev?.duracao_recomendada_horas}h
+                </p>
+              </a>
+            );
+          })}
+        </div>
+      </section>
+    )}
+
+    <h2>Modelos disponíveis</h2>
+    <p>Três tamanhos de touro pra atender desde festa de criança até evento corporativo de 300 pessoas:</p>
+    <TabelaModelos />
+
+    <h2>Logística e entrega para {bairro.nome}</h2>
+    <p>
+      Tempo médio de entrega: <strong>{bairro.tempo_entrega_min}-{bairro.tempo_entrega_max} minutos</strong>
+      saindo do depósito Méier.
+      Entregamos com 3 horas de antecedência ao início do evento. Montamos em ~40 minutos,
+      testamos o equipamento, fazemos briefing de segurança com o responsável.
+    </p>
+    <p>{bairro.restricao_logistica}</p>
+
+    {bairro.bairros_proximos.length > 0 && (
+      <section>
+        <h2>Bairros próximos que também atendemos</h2>
+        <ul class="flex flex-wrap gap-2">
+          {bairro.bairros_proximos.map(b => (
+            <li>
+              <a href={`/${b}`} class="badge-dourado no-underline hover:bg-rodeio-dourado-dark">
+                {b.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    <section class="bg-rodeio-creme py-8 my-10 -mx-4 md:-mx-6 px-4 md:px-6 rounded">
+      <h2 class="!mt-0 text-center">Pronto pra reservar em {bairro.nome}?</h2>
+      <div class="text-center mt-4">
+        <CTAWhatsApp bairro={bairro.nome} />
+      </div>
+    </section>
+
+    <FontesRodape {fontes} />
+  </article>
+</BaseLayout>

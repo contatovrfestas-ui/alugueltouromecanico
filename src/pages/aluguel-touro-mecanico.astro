@@ -1,0 +1,103 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CTAWhatsApp from '../components/CTAWhatsApp.astro';
+import TabelaModelos from '../components/TabelaModelos.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import SchemaLocalBusiness from '../components/SchemaLocalBusiness.astro';
+import FontesRodape from '../components/FontesRodape.astro';
+
+const title = 'Aluguel de Touro Mecânico no Rio de Janeiro — Como Funciona';
+const description =
+  'Como funciona o aluguel de touro mecânico no Rio de Janeiro: modelos disponíveis, regulamentação, segurança, logística, faixas de preço. Laudo INMETRO NBR 16.071, seguro de RC.';
+const pageUrl = 'https://alugueltouromecanico.com.br/aluguel-touro-mecanico';
+
+const breadcrumbs = [
+  { name: 'Início', url: 'https://alugueltouromecanico.com.br/' },
+  { name: 'Aluguel de Touro Mecânico', url: pageUrl },
+];
+
+const fontes = [
+  { nome: 'ABNT NBR 16.071:2012 — Brinquedos infláveis', url: 'https://www.abntcatalogo.com.br' },
+  { nome: 'Lei Municipal RJ 126/77 — Código de Posturas', url: 'https://www.jusbrasil.com.br' },
+  { nome: 'Lei Municipal RJ 3.268/01 — Lei do Silêncio', url: 'https://www.jusbrasil.com.br' },
+];
+---
+
+<BaseLayout {title} {description} canonical={pageUrl}>
+  <SchemaLocalBusiness
+    slot="head"
+    {pageUrl}
+    pageTitle={title}
+    {description}
+    breadcrumbs={breadcrumbs}
+  />
+
+  <article class="container-prose">
+    <Breadcrumbs items={breadcrumbs.map((b, i) => ({
+      name: b.name,
+      url: i < breadcrumbs.length - 1 ? b.url : undefined,
+    }))} />
+
+    <h1>Aluguel de Touro Mecânico no Rio de Janeiro: Como Funciona</h1>
+    <p class="text-lg mt-3">
+      Touro mecânico é a atração que vira o ponto alto de festa junina, formatura, aniversário 18+
+      e evento corporativo. Aqui está tudo que você precisa saber antes de fechar o aluguel
+      no Rio de Janeiro: modelos disponíveis, regulamentação, segurança, logística e faixas de preço.
+    </p>
+    <div class="mt-6">
+      <CTAWhatsApp />
+    </div>
+
+    <h2>Modelos disponíveis</h2>
+    <TabelaModelos />
+
+    <h2>Regulamentação no Rio de Janeiro</h2>
+    <p>
+      A operação de touro mecânico em festa privada na cidade do Rio segue 3 normas principais:
+    </p>
+    <ul>
+      <li>
+        <strong>ABNT NBR 16.071:2012</strong> — norma técnica brasileira para brinquedos infláveis
+        de uso recreativo. Define requisitos mecânicos, área de queda, idade mínima e
+        condições climáticas que invalidam operação (chuva forte, vento &gt; 40 km/h).
+      </li>
+      <li>
+        <strong>Lei Municipal 126/77 (Código de Posturas)</strong> — eventos privados acima de 100 pessoas
+        em ambiente fechado exigem AVCB simplificado do Corpo de Bombeiros RJ.
+      </li>
+      <li>
+        <strong>Lei Municipal 3.268/01 (Lei do Silêncio)</strong> — som em zona residencial até
+        22h em dias úteis e domingo, 23h sexta/sábado.
+      </li>
+    </ul>
+
+    <h2>Documentação que toda empresa séria entrega</h2>
+    <ol>
+      <li>Laudo INMETRO NBR 16.071 atualizado anualmente</li>
+      <li>ART do operador (Anotação de Responsabilidade Técnica do CREA-RJ)</li>
+      <li>Apólice de seguro de responsabilidade civil (mínimo R$ 100.000, recomendado R$ 300.000)</li>
+      <li>Atestado de manutenção mensal do equipamento</li>
+      <li>Certificado de operador treinado presente toda a operação</li>
+    </ol>
+
+    <h2>Faixas de preço (4h de operação, tudo incluso)</h2>
+    <table>
+      <thead>
+        <tr><th>Tamanho do evento</th><th>Modelo</th><th>Faixa</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>30-60 pessoas</td><td>Profissional</td><td>R$ 1.200 – R$ 1.500</td></tr>
+        <tr><td>60-120 pessoas</td><td>Profissional 6h</td><td>R$ 1.600 – R$ 2.200</td></tr>
+        <tr><td>120-200 pessoas</td><td>Profissional ou 2 unidades</td><td>R$ 2.400 – R$ 3.500</td></tr>
+        <tr><td>Festa empresa 200+</td><td>Gigante + atração extra</td><td>R$ 4.000+</td></tr>
+      </tbody>
+    </table>
+
+    <section class="bg-rodeio-creme py-8 my-10 -mx-4 md:-mx-6 px-4 md:px-6 rounded text-center">
+      <h2 class="!mt-0">Pronto pra reservar?</h2>
+      <CTAWhatsApp />
+    </section>
+
+    <FontesRodape {fontes} />
+  </article>
+</BaseLayout>

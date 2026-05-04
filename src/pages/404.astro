@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CTAWhatsApp from '../components/CTAWhatsApp.astro';
+---
+
+<BaseLayout
+  title="Página não encontrada"
+  description="A página que você procura não existe ou foi movida."
+  noindex
+>
+  <div class="container-prose text-center py-16">
+    <h1>Pista vazia</h1>
+    <p class="text-lg my-6">
+      A página que você procura não existe ou mudou de endereço.<br/>
+      Volte pra <a href="/">página inicial</a> ou peça orçamento direto no WhatsApp.
+    </p>
+    <CTAWhatsApp texto="📱 Falar no WhatsApp" />
+  </div>
+</BaseLayout>

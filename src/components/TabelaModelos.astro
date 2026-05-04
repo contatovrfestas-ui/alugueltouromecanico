@@ -1,0 +1,63 @@
+---
+import { getModelos } from '../lib/sheets';
+
+interface Props {
+  destaque?: 'infantil' | 'profissional' | 'gigante';
+}
+const { destaque } = Astro.props;
+
+// Permite uso sem Sheets configurada — fallback estático pro build inicial
+let modelos: Array<{
+  slug: string; nome: string; area_inflada: string;
+  pe_direito_min: number; footprint_total: string; peso_max_kg: number;
+  idade_min: number; descricao_curta: string;
+}>;
+
+try {
+  modelos = await getModelos();
+  if (!modelos.length) throw new Error('Sheets vazio');
+} catch {
+  modelos = [
+    { slug: 'infantil', nome: 'Infantil', area_inflada: '3m × 3m', pe_direito_min: 2.8,
+      footprint_total: '4,5m × 4,5m', peso_max_kg: 60, idade_min: 6,
+      descricao_curta: 'Festa de criança 6-12 anos' },
+    { slug: 'profissional', nome: 'Profissional', area_inflada: '5m × 5m', pe_direito_min: 3.0,
+      footprint_total: '7m × 7m', peso_max_kg: 120, idade_min: 14,
+      descricao_curta: 'Festa adulto, formatura, junina' },
+    { slug: 'gigante', nome: 'Gigante', area_inflada: '6m × 6m', pe_direito_min: 3.2,
+      footprint_total: '8m × 8m', peso_max_kg: 150, idade_min: 14,
+      descricao_curta: 'Festa empresa, arraiá grande' },
+  ];
+}
+---
+
+<table class="text-sm md:text-base">
+  <thead>
+    <tr>
+      <th>Modelo</th>
+      <th>Área inflada</th>
+      <th>Pé-direito mín.</th>
+      <th>Footprint total</th>
+      <th>Peso máx.</th>
+      <th>Idade mín.</th>
+    </tr>
+  </thead>
+  <tbody>
+    {modelos.map(m => (
+      <tr class={destaque === m.slug ? 'bg-rodeio-dourado/30' : ''}>
+        <th class="!bg-transparent !text-rodeio-couro !border-rodeio-creme-dark text-left">
+          <a href={`/modelos/${m.slug}`}>{m.nome}</a>
+        </th>
+        <td>{m.area_inflada}</td>
+        <td>{m.pe_direito_min.toFixed(2)}m</td>
+        <td>{m.footprint_total}</td>
+        <td>{m.peso_max_kg} kg</td>
+        <td>{m.idade_min} anos</td>
+      </tr>
+    ))}
+  </tbody>
+</table>
+
+<p class="text-xs text-rodeio-cinza-rustico mt-2">
+  Footprint total inclui base inflável de queda (1,5m em cada lado), exigência da norma INMETRO NBR 16.071, item 4.2.
+</p>

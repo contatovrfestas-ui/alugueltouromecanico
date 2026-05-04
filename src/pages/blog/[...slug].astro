@@ -1,0 +1,72 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CTAWhatsApp from '../../components/CTAWhatsApp.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map(post => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+const pageUrl = `https://alugueltouromecanico.com.br/blog/${post.id}`;
+
+const breadcrumbs = [
+  { name: 'Início', url: 'https://alugueltouromecanico.com.br/' },
+  { name: 'Blog', url: 'https://alugueltouromecanico.com.br/blog' },
+  { name: post.data.title, url: pageUrl },
+];
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: post.data.title,
+  description: post.data.description,
+  datePublished: post.data.pubDate.toISOString(),
+  ...(post.data.updatedDate ? { dateModified: post.data.updatedDate.toISOString() } : {}),
+  author: { '@type': 'Organization', name: 'Aluguel Touro Mecânico' },
+  publisher: { '@type': 'Organization', name: 'Aluguel Touro Mecânico' },
+  ...(post.data.heroImage ? { image: new URL(post.data.heroImage, 'https://alugueltouromecanico.com.br').href } : {}),
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: breadcrumbs.map((b, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: b.name,
+    item: b.url,
+  })),
+};
+---
+
+<BaseLayout title={post.data.title} description={post.data.description} canonical={pageUrl}>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify([articleSchema, breadcrumbSchema])} is:inline />
+
+  <article class="container-prose">
+    <Breadcrumbs items={breadcrumbs.map((b, i) => ({
+      name: b.name,
+      url: i < breadcrumbs.length - 1 ? b.url : undefined,
+    }))} />
+
+    <h1>{post.data.title}</h1>
+    <p class="text-sm text-rodeio-cinza-rustico mt-2">
+      Publicado em {post.data.pubDate.toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })}
+      {post.data.updatedDate && ` · atualizado em ${post.data.updatedDate.toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })}`}
+    </p>
+
+    <Content />
+
+    <section class="bg-rodeio-creme py-8 my-10 -mx-4 md:-mx-6 px-4 md:px-6 rounded text-center">
+      <h2 class="!mt-0">Pedir orçamento agora</h2>
+      <CTAWhatsApp />
+    </section>
+  </article>
+</BaseLayout>

@@ -1,0 +1,159 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import CTAWhatsApp from '../components/CTAWhatsApp.astro';
+import TabelaModelos from '../components/TabelaModelos.astro';
+import FAQ from '../components/FAQ.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import SchemaLocalBusiness from '../components/SchemaLocalBusiness.astro';
+import FontesRodape from '../components/FontesRodape.astro';
+import { extrairFaqs, extrairCasos } from '../lib/schema';
+import type { IPagina, IBairro, IEvento } from '../lib/schema';
+
+interface Props {
+  pagina: IPagina;
+  bairro: IBairro;
+  evento: IEvento;
+}
+
+const { pagina, bairro, evento } = Astro.props;
+const faqs = extrairFaqs(pagina);
+const casos = extrairCasos(pagina);
+
+const pageUrl = `https://alugueltouromecanico.com.br/${pagina.slug_total}`;
+
+const breadcrumbs = [
+  { name: 'Início', url: 'https://alugueltouromecanico.com.br/' },
+  { name: bairro.nome, url: `https://alugueltouromecanico.com.br/${bairro.slug}` },
+  { name: evento.nome, url: pageUrl },
+];
+
+const fontes = [
+  { nome: 'IBGE Censo 2022 — bairros do Rio', url: 'https://sidra.ibge.gov.br' },
+  { nome: 'INMET Normais Climatológicas 1991-2020', url: 'https://portal.inmet.gov.br/normais' },
+  { nome: 'Lei Municipal RJ 126/77 — Código de Posturas', url: 'https://www.jusbrasil.com.br' },
+  { nome: 'Lei Municipal RJ 3.268/01 — Lei do Silêncio', url: 'https://www.jusbrasil.com.br' },
+  { nome: 'ABNT NBR 16.071:2012 — Brinquedos infláveis', url: 'https://www.abntcatalogo.com.br' },
+  { nome: 'Riotur — Agenda oficial 2026', url: 'https://riotur.rio/eventos' },
+];
+---
+
+<BaseLayout
+  title={pagina.title}
+  description={pagina.description}
+  ogImage={pagina.imagem_hero}
+  noindex={!pagina.indexable}
+  canonical={pageUrl}
+>
+  <SchemaLocalBusiness
+    slot="head"
+    {pageUrl}
+    pageTitle={pagina.title}
+    description={pagina.description}
+    areaServed={[bairro.nome, ...bairro.bairros_proximos.slice(0, 2).map(s =>
+      s.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
+    )]}
+    {faqs}
+    {breadcrumbs}
+    precoMin={pagina.preco_min}
+    precoMax={pagina.preco_max}
+  />
+
+  <article class="container-prose">
+    <Breadcrumbs items={breadcrumbs.map(b => ({ name: b.name, url: b !== breadcrumbs.at(-1) ? b.url : undefined }))} />
+
+    <header class="mb-6">
+      <h1>{pagina.h1}</h1>
+      <p class="text-base md:text-lg text-rodeio-cinza-rustico mt-3" set:html={pagina.subtitle} />
+      <div class="mt-6">
+        <CTAWhatsApp bairro={bairro.nome} evento={evento.nome} />
+      </div>
+      <p class="text-xs text-rodeio-cinza-rustico mt-3">
+        Última atualização: <strong>{pagina.data_atualizacao}</strong> · Próxima revisão: <strong>{pagina.proxima_revisao}</strong>
+      </p>
+    </header>
+
+    {casos.length > 0 && (
+      <section class="bg-rodeio-creme border-l-4 border-rodeio-dourado p-5 my-8 rounded-r">
+        <h2 class="!mt-0">Casos recentes que operamos em {bairro.nome}</h2>
+        <ul class="space-y-3">
+          {casos.map(c => (
+            <li>
+              <strong class="font-title text-rodeio-couro">{c.data} — {c.local}.</strong>
+              <span class="block text-sm mt-1">{c.descricao}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    <section>
+      <h2>Cabe no seu salão? Veja os 3 modelos antes de pedir orçamento</h2>
+      <p>
+        A primeira pergunta que recebemos no WhatsApp é "cabe no meu salão?".
+        Aqui está a resposta antes de você precisar perguntar:
+      </p>
+      <TabelaModelos destaque={pagina.modelo_recomendado} />
+      <p class="mt-4 text-sm">
+        <strong>Realidade do salão típico em {bairro.nome}:</strong>
+        {bairro.restricao_logistica}
+      </p>
+      <div class="mt-4">
+        <CTAWhatsApp
+          bairro={bairro.nome}
+          evento={evento.nome}
+          contexto="vou mandar foto/medidas do meu salão"
+          variant="secondary"
+          texto="Mandar foto pelo WhatsApp"
+        />
+      </div>
+    </section>
+
+    <section>
+      <h2>Tempo de entrega para {bairro.nome}</h2>
+      <p>
+        Saímos do depósito em Méier. Tempo médio até {bairro.nome}: entre <strong>{bairro.tempo_entrega_min}</strong>
+        e <strong>{bairro.tempo_entrega_max} minutos</strong>, dependendo do horário.
+      </p>
+      <p class="text-sm text-rodeio-cinza-rustico">
+        Regra do dia da festa: entregamos com 3 horas de antecedência ao início do evento.
+      </p>
+    </section>
+
+    <section>
+      <h2>Faixas de preço (4h de operação, tudo incluso)</h2>
+      <p>
+        Aluguel para <strong>{evento.nome.toLowerCase()}</strong> em {bairro.nome},
+        a partir de <strong>R$ {pagina.preco_min.toLocaleString('pt-BR')}</strong>
+        até R$ {pagina.preco_max.toLocaleString('pt-BR')} dependendo do tamanho do evento.
+      </p>
+      <p class="text-sm">
+        Inclui: operador profissional toda a festa, montagem e desmontagem,
+        laudo INMETRO, ART, seguro de RC R$ 300.000.
+      </p>
+      <div class="mt-6">
+        <CTAWhatsApp bairro={bairro.nome} evento={evento.nome} />
+      </div>
+    </section>
+
+    <FAQ items={faqs} titulo={`Perguntas frequentes — ${bairro.nome}, ${evento.nome.toLowerCase()}, touro mecânico`} />
+
+    <section class="bg-rodeio-creme py-8 my-10 -mx-4 md:-mx-6 px-4 md:px-6 rounded">
+      <h2 class="!mt-0 text-center">Pronto pra reservar em {bairro.nome}?</h2>
+      <p class="text-center">
+        Mande no WhatsApp: endereço, data e horário, estimativa de público, foto/medidas do espaço.<br/>
+        Resposta com orçamento em até 2h em horário comercial.
+      </p>
+      <div class="text-center mt-4">
+        <CTAWhatsApp bairro={bairro.nome} evento={evento.nome} />
+      </div>
+    </section>
+
+    <FontesRodape
+      {fontes}
+      ultimaAtualizacao={pagina.data_atualizacao}
+      proximaRevisao={pagina.proxima_revisao}
+    />
+  </article>
+</BaseLayout>

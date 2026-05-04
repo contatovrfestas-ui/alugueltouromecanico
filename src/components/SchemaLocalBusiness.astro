@@ -1,0 +1,87 @@
+---
+import { NAP } from '../lib/nap';
+import type { IFaqItem } from '../lib/schema';
+
+interface Props {
+  pageUrl: string;
+  pageTitle: string;
+  description: string;
+  areaServed?: string[];           // ex: ["Tijuca", "Vila Isabel"]
+  faqs?: IFaqItem[];
+  breadcrumbs?: Array<{ name: string; url: string }>;
+  precoMin?: number;
+  precoMax?: number;
+}
+
+const {
+  pageUrl, pageTitle, description,
+  areaServed = ['Rio de Janeiro'],
+  faqs = [],
+  breadcrumbs = [],
+  precoMin, precoMax,
+} = Astro.props;
+
+const businessSchema: Record<string, unknown> = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  '@id': `${NAP.url}#business`,
+  name: NAP.name,
+  url: NAP.url,
+  telephone: `+${NAP.whatsappNumber}`,
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: NAP.city,
+    addressRegion: NAP.state,
+    addressCountry: 'BR',
+    ...(NAP.cep ? { postalCode: NAP.cep } : {}),
+    ...(NAP.street ? { streetAddress: NAP.street } : {}),
+  },
+  areaServed: areaServed.map(a => ({ '@type': 'City', name: `${a}, ${NAP.state}` })),
+  foundingDate: String(NAP.fundadoEm),
+  priceRange: precoMin && precoMax ? `R$${precoMin}-R$${precoMax}` : 'R$$',
+};
+if (NAP.email) businessSchema.email = NAP.email;
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  serviceType: 'Aluguel de touro mecânico',
+  provider: { '@id': `${NAP.url}#business` },
+  areaServed: areaServed.map(a => ({ '@type': 'City', name: `${a}, ${NAP.state}` })),
+  name: pageTitle,
+  description,
+  ...(precoMin && precoMax ? {
+    offers: {
+      '@type': 'AggregateOffer',
+      priceCurrency: 'BRL',
+      lowPrice: precoMin,
+      highPrice: precoMax,
+    }
+  } : {}),
+};
+
+const faqSchema = faqs.length > 0 ? {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map(f => ({
+    '@type': 'Question',
+    name: f.pergunta,
+    acceptedAnswer: { '@type': 'Answer', text: f.resposta },
+  })),
+} : null;
+
+const breadcrumbSchema = breadcrumbs.length > 0 ? {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: breadcrumbs.map((b, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: b.name,
+    item: b.url,
+  })),
+} : null;
+
+const all = [businessSchema, serviceSchema, faqSchema, breadcrumbSchema].filter(Boolean);
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(all, null, 0)} is:inline />

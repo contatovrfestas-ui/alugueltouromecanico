@@ -1,0 +1,31 @@
+---
+interface Fonte { nome: string; url: string; }
+interface Props {
+  fontes: Fonte[];
+  ultimaAtualizacao?: string;
+  proximaRevisao?: string;
+}
+
+const { fontes, ultimaAtualizacao, proximaRevisao } = Astro.props;
+---
+
+<aside class="mt-12 pt-6 border-t border-rodeio-creme-dark text-xs text-rodeio-cinza-rustico">
+  {(ultimaAtualizacao || proximaRevisao) && (
+    <p class="mb-3">
+      {ultimaAtualizacao && <>Última atualização: <strong>{ultimaAtualizacao}</strong></>}
+      {ultimaAtualizacao && proximaRevisao && ' · '}
+      {proximaRevisao && <>Próxima revisão: <strong>{proximaRevisao}</strong></>}
+    </p>
+  )}
+
+  {fontes.length > 0 && (
+    <details>
+      <summary class="cursor-pointer font-semibold">Fontes citadas neste guia</summary>
+      <ul class="mt-2 space-y-1 list-disc list-inside">
+        {fontes.map(f => (
+          <li><a href={f.url} target="_blank" rel="noopener nofollow">{f.nome}</a></li>
+        ))}
+      </ul>
+    </details>
+  )}
+</aside>

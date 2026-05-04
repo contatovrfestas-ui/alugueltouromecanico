@@ -1,0 +1,69 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CTAWhatsApp from '../../components/CTAWhatsApp.astro';
+import TabelaModelos from '../../components/TabelaModelos.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import SchemaLocalBusiness from '../../components/SchemaLocalBusiness.astro';
+import { getModelosData } from '../../lib/data-source';
+
+export async function getStaticPaths() {
+  const modelos = await getModelosData();
+  return modelos.map(modelo => ({
+    params: { modelo: modelo.slug },
+    props: { modelo },
+  }));
+}
+
+const { modelo } = Astro.props;
+
+const title = `Touro Mecânico ${modelo.nome} — Aluguel no Rio de Janeiro`;
+const description = `${modelo.descricao_curta}. Área inflada ${modelo.area_inflada}, pé-direito mínimo ${modelo.pe_direito_min}m, capacidade de peso ${modelo.peso_max_kg}kg. Idade mínima ${modelo.idade_min} anos.`;
+const pageUrl = `https://alugueltouromecanico.com.br/modelos/${modelo.slug}`;
+
+const breadcrumbs = [
+  { name: 'Início', url: 'https://alugueltouromecanico.com.br/' },
+  { name: 'Modelos', url: 'https://alugueltouromecanico.com.br/modelos/profissional' },
+  { name: modelo.nome, url: pageUrl },
+];
+---
+
+<BaseLayout {title} {description} canonical={pageUrl}>
+  <SchemaLocalBusiness
+    slot="head"
+    {pageUrl}
+    pageTitle={title}
+    {description}
+    breadcrumbs={breadcrumbs}
+  />
+
+  <article class="container-prose">
+    <Breadcrumbs items={breadcrumbs.map((b, i) => ({
+      name: b.name,
+      url: i < breadcrumbs.length - 1 ? b.url : undefined,
+    }))} />
+
+    <h1>Touro Mecânico {modelo.nome}</h1>
+    <p class="text-lg mt-3">{modelo.descricao_longa}</p>
+    <div class="mt-6">
+      <CTAWhatsApp contexto={`modelo ${modelo.nome}`} />
+    </div>
+
+    <h2>Especificações técnicas</h2>
+    <ul>
+      <li><strong>Área inflada:</strong> {modelo.area_inflada}</li>
+      <li><strong>Footprint total (com base de queda):</strong> {modelo.footprint_total}</li>
+      <li><strong>Pé-direito mínimo:</strong> {modelo.pe_direito_min}m</li>
+      <li><strong>Capacidade de peso:</strong> até {modelo.peso_max_kg}kg</li>
+      <li><strong>Idade mínima:</strong> {modelo.idade_min} anos</li>
+      <li><strong>Níveis de intensidade:</strong> {modelo.niveis_intensidade}</li>
+    </ul>
+
+    <h2>Comparativo entre os 3 modelos</h2>
+    <TabelaModelos destaque={modelo.slug} />
+
+    <section class="bg-rodeio-creme py-8 my-10 -mx-4 md:-mx-6 px-4 md:px-6 rounded text-center">
+      <h2 class="!mt-0">Pedir orçamento — modelo {modelo.nome}</h2>
+      <CTAWhatsApp contexto={`modelo ${modelo.nome}`} />
+    </section>
+  </article>
+</BaseLayout>

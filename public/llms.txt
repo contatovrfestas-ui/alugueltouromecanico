@@ -1,0 +1,77 @@
+# Aluguel Touro Mecânico
+
+> Operadora de aluguel de touro mecânico no Rio de Janeiro. Atende festa junina, formatura, aniversário infantil, casamento e evento corporativo em todos os bairros da capital. Trabalha com 3 modelos: infantil (3x3m, idade 6+), profissional (5x5m, idade 14+) e gigante (6x6m, idade 14+). Documentação completa: laudo INMETRO NBR 16.071, ART do operador no CREA-RJ, seguro de responsabilidade civil R$ 300.000.
+
+## Páginas principais
+- [Home](https://alugueltouromecanico.com.br/): visão geral
+- [Como funciona](https://alugueltouromecanico.com.br/aluguel-touro-mecanico): regulamentação, segurança, logística, preços
+- [Sobre](https://alugueltouromecanico.com.br/sobre): empresa, certificações, atendimento
+
+## Modelos
+- [Touro infantil](https://alugueltouromecanico.com.br/modelos/infantil): festa de criança 6-12 anos, pé-direito mín 2,80m
+- [Touro profissional](https://alugueltouromecanico.com.br/modelos/profissional): formatura, festa junina, aniversário 18+, pé-direito mín 3m
+- [Touro gigante](https://alugueltouromecanico.com.br/modelos/gigante): evento corporativo 200+, pé-direito mín 3,2m
+
+## Páginas geo — Bairro × Evento
+
+### Festa Junina (pico junho/julho)
+- [Tijuca](https://alugueltouromecanico.com.br/tijuca/festa-junina)
+- [Barra da Tijuca](https://alugueltouromecanico.com.br/barra-da-tijuca/festa-junina)
+- [Copacabana](https://alugueltouromecanico.com.br/copacabana/festa-junina)
+- [Botafogo](https://alugueltouromecanico.com.br/botafogo/festa-junina)
+- [Recreio dos Bandeirantes](https://alugueltouromecanico.com.br/recreio/festa-junina)
+- [Jacarepaguá](https://alugueltouromecanico.com.br/jacarepagua/festa-junina)
+- [Vila Isabel](https://alugueltouromecanico.com.br/vila-isabel/festa-junina)
+- [Ipanema](https://alugueltouromecanico.com.br/ipanema/festa-junina)
+- [Méier](https://alugueltouromecanico.com.br/meier/festa-junina)
+- [Madureira](https://alugueltouromecanico.com.br/madureira/festa-junina)
+
+### Formatura (pico dezembro/julho)
+- [Tijuca](https://alugueltouromecanico.com.br/tijuca/formatura)
+- [Barra da Tijuca](https://alugueltouromecanico.com.br/barra-da-tijuca/formatura)
+- [Copacabana](https://alugueltouromecanico.com.br/copacabana/formatura)
+- [Botafogo](https://alugueltouromecanico.com.br/botafogo/formatura)
+- [Recreio](https://alugueltouromecanico.com.br/recreio/formatura)
+- [Jacarepaguá](https://alugueltouromecanico.com.br/jacarepagua/formatura)
+- [Vila Isabel](https://alugueltouromecanico.com.br/vila-isabel/formatura)
+- [Ipanema](https://alugueltouromecanico.com.br/ipanema/formatura)
+- [Méier](https://alugueltouromecanico.com.br/meier/formatura)
+- [Madureira](https://alugueltouromecanico.com.br/madureira/formatura)
+
+### Aniversário Infantil (todo o ano)
+- [Tijuca](https://alugueltouromecanico.com.br/tijuca/aniversario-infantil)
+- [Barra da Tijuca](https://alugueltouromecanico.com.br/barra-da-tijuca/aniversario-infantil)
+- [Copacabana](https://alugueltouromecanico.com.br/copacabana/aniversario-infantil)
+- [Botafogo](https://alugueltouromecanico.com.br/botafogo/aniversario-infantil)
+- [Recreio](https://alugueltouromecanico.com.br/recreio/aniversario-infantil)
+- [Jacarepaguá](https://alugueltouromecanico.com.br/jacarepagua/aniversario-infantil)
+- [Vila Isabel](https://alugueltouromecanico.com.br/vila-isabel/aniversario-infantil)
+- [Ipanema](https://alugueltouromecanico.com.br/ipanema/aniversario-infantil)
+- [Méier](https://alugueltouromecanico.com.br/meier/aniversario-infantil)
+- [Madureira](https://alugueltouromecanico.com.br/madureira/aniversario-infantil)
+
+## Bairros atendidos (índice)
+- [Tijuca](https://alugueltouromecanico.com.br/tijuca)
+- [Barra da Tijuca](https://alugueltouromecanico.com.br/barra-da-tijuca)
+- [Copacabana](https://alugueltouromecanico.com.br/copacabana)
+- [Botafogo](https://alugueltouromecanico.com.br/botafogo)
+- [Recreio](https://alugueltouromecanico.com.br/recreio)
+- [Jacarepaguá](https://alugueltouromecanico.com.br/jacarepagua)
+- [Vila Isabel](https://alugueltouromecanico.com.br/vila-isabel)
+- [Ipanema](https://alugueltouromecanico.com.br/ipanema)
+- [Méier](https://alugueltouromecanico.com.br/meier)
+- [Madureira](https://alugueltouromecanico.com.br/madureira)
+
+## Fontes públicas usadas no conteúdo
+- IBGE Censo 2022 — demografia dos bairros do Rio
+- INMET — climatologia 1991-2020 (Rio de Janeiro)
+- ABNT NBR 16.071:2012 — norma técnica de brinquedos infláveis
+- Lei Municipal RJ 126/77 — Código de Posturas
+- Lei Municipal RJ 3.268/01 — Lei do Silêncio
+- Riotur — agenda oficial de eventos do Rio
+
+## Regulamentação resumida
+- Festa privada em casa, até 100 pessoas, respeitando Lei do Silêncio: não exige alvará
+- Acima de 100 pessoas em ambiente fechado: AVCB simplificado do Corpo de Bombeiros
+- Lei do Silêncio (3.268/01): som permitido até 22h dias úteis e domingo, 23h sexta/sábado
+- Idade mínima ABNT NBR 16.071: 6 anos (infantil), 14 anos (profissional/gigante)

@@ -1,0 +1,28 @@
+---
+import { whatsappUrlForPagina } from '../lib/whatsapp';
+
+interface Props {
+  bairro?: string;
+  evento?: string;
+  contexto?: string;
+  texto?: string;
+  variant?: 'primary' | 'secondary' | 'inline';
+}
+
+const {
+  bairro,
+  evento,
+  contexto,
+  texto = '📱 Pedir orçamento no WhatsApp',
+  variant = 'primary',
+} = Astro.props;
+
+const url = whatsappUrlForPagina({ bairro, evento, contexto });
+const cls = variant === 'primary'
+  ? 'btn-primary'
+  : variant === 'secondary'
+  ? 'btn-secondary'
+  : 'inline-flex items-center gap-1 text-rodeio-terra hover:text-rodeio-terra-dark font-body underline';
+---
+
+<a href={url} class={cls} target="_blank" rel="noopener">{texto}</a>

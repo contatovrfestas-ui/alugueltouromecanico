@@ -1,0 +1,67 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CTAWhatsApp from '../components/CTAWhatsApp.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import SchemaLocalBusiness from '../components/SchemaLocalBusiness.astro';
+import { NAP } from '../lib/nap';
+
+const title = 'Sobre — Aluguel Touro Mecânico Rio de Janeiro';
+const description =
+  'Operadora de touro mecânico no Rio de Janeiro com laudo INMETRO NBR 16.071, seguro de responsabilidade civil e operador profissional treinado.';
+const pageUrl = 'https://alugueltouromecanico.com.br/sobre';
+
+const breadcrumbs = [
+  { name: 'Início', url: 'https://alugueltouromecanico.com.br/' },
+  { name: 'Sobre', url: pageUrl },
+];
+---
+
+<BaseLayout {title} {description} canonical={pageUrl}>
+  <SchemaLocalBusiness
+    slot="head"
+    {pageUrl}
+    pageTitle={title}
+    {description}
+    breadcrumbs={breadcrumbs}
+  />
+  <article class="container-prose">
+    <Breadcrumbs items={breadcrumbs.map((b, i) => ({
+      name: b.name,
+      url: i < breadcrumbs.length - 1 ? b.url : undefined,
+    }))} />
+
+    <h1>Quem somos</h1>
+    <p>
+      A <strong>{NAP.name}</strong> opera no aluguel de touro mecânico no Rio de Janeiro
+      desde {NAP.fundadoEm}, com sede operacional na cidade.
+      Trabalhamos com 3 modelos (infantil, profissional, gigante) atendendo festas privadas,
+      formaturas universitárias, festas juninas, aniversários adultos e eventos corporativos.
+    </p>
+
+    <h2>Compromisso com segurança</h2>
+    <p>
+      Todo equipamento opera com <strong>laudo INMETRO atualizado (NBR 16.071)</strong>, ART do operador
+      registrada no CREA-RJ, apólice de seguro de responsabilidade civil com cobertura mínima de
+      R$ 300.000, e operador profissional treinado presente durante toda a festa.
+      Esses 5 documentos são entregues por padrão junto com o contrato.
+    </p>
+
+    <h2>Atendimento</h2>
+    <p>
+      Atendemos toda a cidade do Rio de Janeiro — Zona Sul, Zona Norte, Zona Oeste e Centro.
+      Saída do depósito em {NAP.city}, entrega com 3 horas de antecedência ao início do evento.
+    </p>
+
+    <h2>Por que escolher uma empresa com documentação completa</h2>
+    <p>
+      Síndico de condomínio tem direito legal de exigir os documentos de segurança antes de liberar
+      o salão. Empresas amadoras costumam não ter laudo, ART ou seguro — e em caso de fiscalização
+      ou acidente, a responsabilidade recai sobre o organizador da festa. Trabalhar com operadora
+      formal protege seu evento.
+    </p>
+
+    <div class="my-8">
+      <CTAWhatsApp texto="📱 Falar no WhatsApp" />
+    </div>
+  </article>
+</BaseLayout>

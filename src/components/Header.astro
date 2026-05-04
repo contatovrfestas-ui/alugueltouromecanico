@@ -1,0 +1,29 @@
+---
+import { whatsappUrl } from '../lib/whatsapp';
+const wa = whatsappUrl();
+---
+
+<header class="bg-rodeio-couro text-rodeio-creme border-b-4 border-rodeio-dourado">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+    <a href="/" class="flex items-center gap-3 no-underline" aria-label="Aluguel Touro Mecânico">
+      <img src="/images/logo/logo-icon.svg" alt="" width="44" height="44" />
+      <span class="font-title text-xl md:text-2xl text-rodeio-creme">Aluguel Touro Mecânico</span>
+    </a>
+
+    <nav class="hidden md:flex items-center gap-6 font-body text-sm">
+      <a href="/aluguel-touro-mecanico" class="text-rodeio-creme hover:text-rodeio-dourado no-underline">Como funciona</a>
+      <a href="/modelos/profissional" class="text-rodeio-creme hover:text-rodeio-dourado no-underline">Modelos</a>
+      <a href="/blog" class="text-rodeio-creme hover:text-rodeio-dourado no-underline">Guias</a>
+      <a href="/sobre" class="text-rodeio-creme hover:text-rodeio-dourado no-underline">Sobre</a>
+    </nav>
+
+    <a
+      href={wa}
+      class="btn-primary text-sm md:text-base"
+      target="_blank"
+      rel="noopener"
+    >
+      📱 WhatsApp
+    </a>
+  </div>
+</header>

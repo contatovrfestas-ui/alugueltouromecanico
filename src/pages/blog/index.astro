@@ -1,0 +1,41 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+
+const posts = (await getCollection('blog'))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const title = 'Blog — Aluguel Touro Mecânico Rio';
+const description = 'Guias práticos sobre aluguel de touro mecânico no Rio de Janeiro: preços, regulamentação, segurança, casos reais e dicas pra escolher o modelo certo pro seu evento.';
+const pageUrl = 'https://alugueltouromecanico.com.br/blog';
+---
+
+<BaseLayout {title} {description} canonical={pageUrl}>
+  <article class="container-prose">
+    <Breadcrumbs items={[
+      { name: 'Início', url: '/' },
+      { name: 'Blog' },
+    ]} />
+
+    <h1>Blog — Touro Mecânico no Rio</h1>
+    <p class="text-lg mt-3">
+      Guias práticos sobre aluguel de touro mecânico no Rio de Janeiro:
+      preços, regulamentação, segurança e casos reais.
+    </p>
+
+    <ul class="not-prose grid gap-4 mt-8">
+      {posts.map(post => (
+        <li class="bg-white border border-rodeio-creme-dark rounded p-5 hover:border-rodeio-terra">
+          <a href={`/blog/${post.id}`} class="no-underline block">
+            <h2 class="font-title text-xl text-rodeio-couro mt-0 mb-2">{post.data.title}</h2>
+            <p class="text-sm text-rodeio-cinza-rustico m-0">{post.data.description}</p>
+            <p class="text-xs text-rodeio-cinza-rustico mt-3 mb-0">
+              {post.data.pubDate.toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })}
+            </p>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </article>
+</BaseLayout>
