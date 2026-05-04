@@ -18,15 +18,22 @@ const POL_NF =
 const POL_AVCB =
   'Casa própria, festa privada, até 100 pessoas, respeitando a Lei do Silêncio (Lei Municipal RJ 3.268/01) — não exige alvará. Acima de 100 pessoas em ambiente fechado, exige AVCB simplificado do Corpo de Bombeiros. Em condomínio, depende da convenção interna.';
 
+// Combina Riotur 2026 (4 ondas de demanda + datas oficiais) com INMET (junho é bom mês climatológico)
+// e substitui a FAQ "antecedência mínima" antiga (que era genérica).
+const FAQ_CALENDARIO_2026 = {
+  p: 'Quando reservar e qual fim de semana de junho dá menos conflito?',
+  r: 'Pelo calendário Riotur 2026, a demanda concentra em 4 ondas: (1) <strong>13-14/jun</strong> — esquenta antes do São João, (2) <strong>20-21/jun</strong> — pico absoluto + arraiá oficial Riotur (Av. das Américas 5300 e 15500), (3) <strong>23-24/jun</strong> — véspera + São João (quarta em 2026, favorece festa empresa fim de tarde), (4) <strong>27-28/jun</strong> — "junina atrasada", baixa concorrência pública. Climatologicamente, junho é <strong>excelente</strong> pra outdoor: média INMET de 154 mm de chuva e 8 dias chuvosos, segundo melhor mês do ano. Reserve 60 dias antes pras ondas 1-2; 30-45 dias pra onda 4 (mais disponibilidade).',
+};
+
 export const PAGINAS_FESTA_JUNINA: IPagina[] = [
   // BARRA DA TIJUCA × FESTA JUNINA
   montarPagina({
     bairro: 'barra-da-tijuca',
     evento: 'festa-junina',
     description:
-      'Touro mecânico inflável e profissional para arraiás privados na Barra da Tijuca, Recreio e Jacarepaguá. Laudo INMETRO NBR 16.071, seguro de RC R$ 300.000, equipe credenciada em condomínios fechados.',
+      'Touro mecânico para arraiás privados na Barra da Tijuca, Recreio e Jacarepaguá. Laudo INMETRO NBR 16.071, seguro de RC, equipe credenciada em condomínios.',
     subtitle:
-      'Touro mecânico inflável e profissional para arraiás e festas juninas privadas em condomínios da Barra da Tijuca, Recreio e Jacarepaguá. Saída do depósito em Méier, entrega em até 80 minutos contando rush da Av. das Américas. Laudo INMETRO NBR 16.071 atualizado em janeiro/2026.',
+      'Touro mecânico inflável e profissional para arraiás e festas juninas privadas em condomínios da Barra da Tijuca (166 mil habitantes, Censo IBGE 2022), Recreio e Jacarepaguá. Saída do depósito em Méier, entrega em até 80 minutos contando rush da Av. das Américas. Laudo INMETRO NBR 16.071 atualizado em janeiro/2026.',
     faqs: [
       { p: 'Como funciona a entrega em condomínio fechado da Barra?', r: 'Quase todo condomínio da Av. das Américas, Olegário Maciel e Sernambetiba exige cadastro prévio do veículo na portaria com 48h de antecedência. Mandamos placa, RG do operador e horário de chegada. Em condomínios da Península, o cadastro tem que ser feito pelo morador via app específico.' },
       { p: 'Cabe no salão de festa típico de prédio na Av. das Américas?', r: 'Salões padrão Cyrela/Even/Tegra na Barra costumam ter 40-80 m² com pé-direito 2,80–3,20m. Comporta o infantil tranquilamente. O profissional precisa de pé-direito 3,00m mínimo e 7×7m de footprint — confirme com foto + medidas pelo WhatsApp em 30 min.' },
@@ -35,7 +42,7 @@ export const PAGINAS_FESTA_JUNINA: IPagina[] = [
       { p: 'Atendem casa de festa em Itanhangá e Recreio com mesma faixa?', r: 'Sim. Itanhangá: 40-55 min do depósito. Recreio: 50-110 min dependendo do trecho. Mesma faixa de preço da Barra, sem custo logístico extra. Casa de praia no Recreio (Pontal): marcar entrega de manhã pra evitar rush da Av. das Américas pelo retorno.' },
       { p: 'Festa junina temática em casa própria com touro mecânico exige alvará?', r: POL_AVCB },
       { p: 'Qual a idade mínima pra subir no touro mecânico?', r: POL_IDADE },
-      { p: 'Antecedência mínima pra reservar 21/06 ou 28/06 de 2026?', r: 'Pra essas duas datas (sábado de junina), recomendamos 60 dias de antecedência mínima na Barra — bairro com altíssima demanda em junho. Pras outras datas, 30-45 dias é suficiente.' },
+      FAQ_CALENDARIO_2026,
     ],
   }),
 
@@ -44,7 +51,9 @@ export const PAGINAS_FESTA_JUNINA: IPagina[] = [
     bairro: 'copacabana',
     evento: 'festa-junina',
     description:
-      'Touro mecânico inflável para arraiás privados em Copacabana, Leme e arredores. Laudo INMETRO NBR 16.071, seguro de RC, operador profissional. Saída do depósito em Méier.',
+      'Touro mecânico inflável para arraiás privados em Copacabana, Leme e arredores. Laudo INMETRO NBR 16.071, seguro de RC, operador profissional.',
+    subtitle:
+      'Touro mecânico inflável para arraiás e festas juninas privadas em Copacabana (170 mil habitantes na RA, Censo IBGE 2022) e Leme. Saída do depósito em Méier, entrega 30-60 min via Túnel Rebouças. Laudo INMETRO NBR 16.071.',
     faqs: [
       { p: 'Onde estaciona a van de entrega em Copacabana?', r: 'Coordenamos com o porteiro do prédio pra usar a vaga de carga e descarga ou a vaga de visitante por 60-90 min. Em endereço sem garagem, usamos zona azul com estacionamento rotativo (R$ 8/h) — orçamos esse custo separado se aplicar. Túnel Velho: rush 17h-19h, recomendamos entrega antes ou depois.' },
       { p: 'Cabe no salão de festa de prédio típico de Copacabana?', r: 'Copacabana tem mistura de prédios — anos 50-60 (pé-direito 2,30-2,60m, só comporta infantil), anos 70-90 (2,80-3,00m, comporta profissional). Mande foto + altura medida do salão pelo WhatsApp; respondemos em 30 minutos qual modelo serve.' },
@@ -53,7 +62,7 @@ export const PAGINAS_FESTA_JUNINA: IPagina[] = [
       { p: 'Atendem festa de casa em Leme e Botafogo com a mesma equipe?', r: 'Sim. Leme: 25-50 min do depósito, mesma faixa de preço. Botafogo: 25-55 min. Em festa de casa em Leme (rua de subida estreita pro Forte), confirmamos largura da rua antes de fechar.' },
       { p: 'Festa em hotel de Copacabana com touro mecânico — pode?', r: 'Pode, em área externa do hotel (terraço, piscina, área de eventos) ou ballroom com pé-direito 3m+. Hotéis exigem laudo INMETRO + ART do operador + apólice de RC R$ 300.000 com cláusula de hospitalidade. Entregamos toda a documentação em 24h.' },
       { p: 'Qual a idade mínima pra subir no touro?', r: POL_IDADE },
-      { p: 'Antecedência mínima pra junho/2026?', r: 'Pra junina em Copacabana, 30-45 dias de antecedência. Datas paralelas a arraiá público da Riotur (21/06, 28/06): 60 dias mínimo, demanda dispara nesse fim de semana.' },
+      FAQ_CALENDARIO_2026,
     ],
   }),
 
@@ -62,9 +71,9 @@ export const PAGINAS_FESTA_JUNINA: IPagina[] = [
     bairro: 'botafogo',
     evento: 'festa-junina',
     description:
-      'Touro mecânico inflável (modelo infantil) para arraiás privados em Botafogo, Humaitá e Flamengo. Pé-direito típico do bairro só comporta o infantil — laudo INMETRO, seguro de RC.',
+      'Touro mecânico infantil para arraiás privados em Botafogo, Humaitá e Flamengo. Pé-direito típico só comporta o infantil — laudo INMETRO, seguro de RC.',
     subtitle:
-      'Touro mecânico inflável (modelo infantil) para arraiás privados em Botafogo, Humaitá e Flamengo. Importante: prédios típicos do bairro têm pé-direito de 2,30–2,60m, então só o infantil cabe. Saída de Méier, entrega em 25–55 min. Laudo INMETRO NBR 16.071.',
+      'Touro mecânico inflável (modelo infantil) para arraiás privados em Botafogo (213.891 habitantes, Censo IBGE 2022 — único bairro da Zona Sul entre os 10 mais populosos do Rio), Humaitá e Flamengo. Importante: prédios típicos do bairro têm pé-direito de 2,30–2,60m, então só o infantil cabe. Saída de Méier, entrega em 25–55 min. Laudo INMETRO NBR 16.071.',
     modelo: 'infantil',
     faqs: [
       { p: 'Por que vocês recomendam só o infantil em Botafogo?', r: 'Prédios anos 70-80 dominam Botafogo (Praia de Botafogo, Voluntários da Pátria, Arnaldo Quintela), com pé-direito de 2,30-2,60m em salão de festa. O profissional precisa de 3,00m mínimo, então só cabe em casa térrea ou condomínio novo. Mande foto + altura pelo WhatsApp pra confirmar.' },
@@ -74,7 +83,7 @@ export const PAGINAS_FESTA_JUNINA: IPagina[] = [
       { p: 'Onde costuma rolar arraiá em Botafogo (referência local)?', r: 'Casa Daros (Rua General Severiano), Galeria Comercial Cobal do Humaitá, espaços do Estácio Sá, casas do entorno do Cemitério São João Batista. Atendemos esses endereços com frequência — checamos pé-direito e área de queda na chegada.' },
       { p: 'Festa privada em casa de Botafogo precisa de alvará?', r: POL_AVCB },
       { p: 'Idade mínima pra subir no touro infantil?', r: 'Pelo manual do fabricante e pela ABNT NBR 16.071, idade mínima de 6 anos pro infantil. Peso máximo 60 kg. Pra criança de 4-5 anos, oferecemos 1 minuto de "voltinha" no nível 1 com adulto presente — sem cobrar volta.' },
-      { p: 'Antecedência mínima pra reservar?', r: 'Pra junina em Botafogo, 30-45 dias de antecedência funciona. Datas paralelas (21/06 e 28/06 de 2026): 60 dias mínimo.' },
+      FAQ_CALENDARIO_2026,
     ],
   }),
 
@@ -84,6 +93,8 @@ export const PAGINAS_FESTA_JUNINA: IPagina[] = [
     evento: 'festa-junina',
     description:
       'Touro mecânico profissional para arraiás privados no Recreio dos Bandeirantes, Vargem Grande e Pontal. Laudo INMETRO NBR 16.071, seguro de RC R$ 300.000.',
+    subtitle:
+      'Touro mecânico profissional para arraiás privados no Recreio dos Bandeirantes (149.961 habitantes, Censo IBGE 2022 — bairro com o maior crescimento populacional do Rio, +70,8% desde 2010), Vargem Grande e Pontal. Saída do depósito em Méier, entrega 50-110 min. Laudo INMETRO NBR 16.071.',
     faqs: [
       { p: 'Tempo de entrega real do depósito até o Recreio?', r: 'Depósito em Méier → Recreio: 50-110 min dependendo do trecho. Recreio começo (Posto 12): 50-65 min. Pontal (Posto 5 do Recreio): 80-110 min. Rush de fim de semana após túnel da Grota Funda: 100-130 min. Recomendamos entrega 2-3h antes da festa.' },
       { p: 'Cabe em casa de praia / casa térrea do Recreio?', r: 'Sim, e o Recreio é o bairro ideal pro profissional e pro gigante: pé-direito alto, área de quintal generosa, sem condomínio com restrição forte. Confirmamos via WhatsApp largura do portão de entrada (mínimo 1,80m) e área de queda 8×8m pro gigante.' },
@@ -92,7 +103,7 @@ export const PAGINAS_FESTA_JUNINA: IPagina[] = [
       { p: 'Atendem Vargem Grande, Vargem Pequena, Guaratiba?', r: 'Sim, com mesma faixa de preço. Vargem Grande: 60-80 min do depósito. Guaratiba: 80-100 min. Em casa de sítio, confirmamos chão firme (operação não roda em areia solta ou grama mole).' },
       { p: 'Festa junina pra escolinha particular do Recreio com 200 crianças — qual modelo?', r: 'Pra arraiá escolar com 200+ crianças (idade 6-12), recomendamos 2 unidades infantis em paralelo (4 horas) ou 1 unidade infantil + 1 brinquedo extra (cama elástica/touro de pelúcia). 1 unidade só cria fila de 30+ minutos e perde a graça.' },
       { p: 'Idade mínima pra subir?', r: POL_IDADE },
-      { p: 'Antecedência mínima pra junho/2026?', r: 'Recreio com altíssima demanda em junho (escolas privadas + condomínios). Recomendamos 60-90 dias de antecedência pra qualquer sábado de junho. Pras datas 21/06 e 28/06: reserve em fevereiro/março.' },
+      FAQ_CALENDARIO_2026,
     ],
   }),
 
@@ -102,6 +113,8 @@ export const PAGINAS_FESTA_JUNINA: IPagina[] = [
     evento: 'festa-junina',
     description:
       'Touro mecânico profissional para arraiás privados em Jacarepaguá, Taquara, Freguesia e Pechincha. Laudo INMETRO NBR 16.071, seguro de RC.',
+    subtitle:
+      'Touro mecânico profissional para arraiás privados em Jacarepaguá (RA com 653 mil moradores, Censo IBGE 2022 — uma das regiões que mais cresceu no Rio), Taquara, Freguesia e Pechincha. Saída do depósito em Méier, entrega 35-90 min. Laudo INMETRO NBR 16.071.',
     faqs: [
       { p: 'Tempo de entrega real Méier → Jacarepaguá?', r: 'Depende muito do trecho de Jacarepaguá. Taquara/Pechincha (próximo à Linha Amarela): 35-55 min. Freguesia (centro): 45-70 min. Curicica/Camorim: 55-90 min. Recomendamos saída 2h antes da festa.' },
       { p: 'Cabe no salão de festa de condomínio em Jacarepaguá?', r: 'Condomínios novos da Estrada dos Bandeirantes, Estrada do Pau-Ferro e Praça Seca: salões com pé-direito 2,80-3,20m, comportam infantil e profissional. Casa de festa em Pechincha/Freguesia: pé-direito 3m+ é comum. Mande foto + medidas.' },
@@ -110,7 +123,7 @@ export const PAGINAS_FESTA_JUNINA: IPagina[] = [
       { p: 'Atendem Taquara, Freguesia e Pechincha com mesma faixa?', r: 'Sim, mesma faixa de preço. Tempo varia: Taquara 35-55 min, Freguesia 45-70 min, Pechincha 40-60 min. Itanhangá (Estrada da Barra): 55-80 min, mesma faixa.' },
       { p: 'Festa privada em casa de Pechincha precisa de alvará?', r: POL_AVCB },
       { p: 'Idade mínima pra subir no touro?', r: POL_IDADE },
-      { p: 'Antecedência mínima pra junho/2026?', r: 'Pra junina em Jacarepaguá, 30-45 dias funciona pra maioria das datas. Pras paralelas (21/06 e 28/06): 60 dias mínimo. Bairro com forte demanda escolar/condomínio.' },
+      FAQ_CALENDARIO_2026,
     ],
   }),
 
@@ -120,6 +133,8 @@ export const PAGINAS_FESTA_JUNINA: IPagina[] = [
     evento: 'festa-junina',
     description:
       'Touro mecânico profissional para arraiás privados em Vila Isabel, Maracanã e Grajaú. Saída do depósito em Méier, entrega em 18-50 min. Laudo INMETRO NBR 16.071.',
+    subtitle:
+      'Touro mecânico profissional para arraiás privados em Vila Isabel, Maracanã e Grajaú (Região Grande Tijuca, que perdeu 50 mil habitantes entre 2010 e 2022 segundo Censo IBGE — perfil familiar consolidado, alta densidade de quadras de samba e clubes). Bairros vizinhos do nosso depósito em Méier — entrega 18-50 min.',
     faqs: [
       { p: 'Tempo de entrega real Méier → Vila Isabel?', r: 'Distância curta — 18-50 min dependendo do trecho. Vila Isabel central (Boulevard 28 de Setembro): 18-30 min. Andaraí: 22-40 min. Próximo a Maracanã: 25-50 min. Bairro vizinho do nosso depósito.' },
       { p: 'Centro comercial de Vila Isabel tem restrição de carga?', r: 'Sim — restrição de veículos acima de 6 toneladas em horário comercial (8h-19h) no Boulevard e ruas adjacentes. Nossa van tem 2,5 toneladas, então passa, mas em festa em rua comercial preferimos entregar antes das 8h ou depois das 19h pra evitar trânsito.' },
@@ -128,7 +143,7 @@ export const PAGINAS_FESTA_JUNINA: IPagina[] = [
       { p: 'Atendem Maracanã, Grajaú e Andaraí com mesma faixa?', r: 'Sim. Maracanã: 25-50 min, mesma faixa. Grajaú: 25-45 min, mesma faixa. Andaraí: 22-40 min. Bairros do nosso eixo principal.' },
       { p: 'Festa junina em quadra de escola samba ou bloco em Vila Isabel?', r: 'Atendemos quadras (Unidos de Vila Isabel, etc.) e blocos. Operação em quadra exige pé-direito 3,2m+ e área 8×8m — comporta o gigante. Cobertura de quadra normalmente garante operação mesmo com chuva (não invalida a NBR).' },
       { p: 'Idade mínima pra subir no touro?', r: POL_IDADE },
-      { p: 'Antecedência mínima pra junho/2026?', r: 'Vila Isabel/Maracanã/Grajaú: 30-45 dias de antecedência funciona. Pras paralelas (21/06 e 28/06 de 2026): 60 dias mínimo, demanda alta de quadras + condomínios.' },
+      FAQ_CALENDARIO_2026,
     ],
   }),
 
@@ -138,6 +153,8 @@ export const PAGINAS_FESTA_JUNINA: IPagina[] = [
     evento: 'festa-junina',
     description:
       'Touro mecânico inflável para arraiás privados em Ipanema, Leblon e Arpoador. Laudo INMETRO, seguro de RC R$ 300.000, operador profissional.',
+    subtitle:
+      'Touro mecânico inflável para arraiás privados em Ipanema, Leblon e Arpoador — perfil de cobertura com pé-direito alto (3m+) que comporta o profissional, e salão de prédio anos 70-80 (2,60-2,90m) onde só cabe o infantil. Saída de Méier, entrega 28-75 min via Túnel Rebouças. Laudo INMETRO NBR 16.071.',
     faqs: [
       { p: 'Onde estaciona a van de entrega em Ipanema?', r: 'Coordenamos com o porteiro pra usar vaga de carga e descarga (60-90 min são suficientes pra montar). Vieira Souto bloqueada aos domingos pela manhã (Lazer aberto): entregamos antes das 7h ou depois das 13h. Em rua sem porteiro, usamos zona azul.' },
       { p: 'Cabe em cobertura ou salão de festa de prédio em Ipanema?', r: 'Coberturas de Ipanema com pé-direito 3m+ comportam o profissional; salão de festa térreo de prédio anos 70-80 (Visc. de Pirajá, Henrique Dumont): pé-direito 2,60-2,90m, só comporta infantil. Mande foto + medidas pelo WhatsApp.' },
@@ -146,7 +163,7 @@ export const PAGINAS_FESTA_JUNINA: IPagina[] = [
       { p: 'Festa junina em hotel ou clube em Ipanema com touro mecânico?', r: 'Atendemos. Hotéis (Caesar Park, Sol Ipanema, Fasano) e clubes (Caiçaras) exigem laudo INMETRO + ART do operador + apólice de RC R$ 300.000 com cláusula de hospitalidade. Documentação entregue em 24h.' },
       { p: 'Festa privada em casa de Ipanema precisa de alvará?', r: POL_AVCB },
       { p: 'Idade mínima pra subir no touro?', r: POL_IDADE },
-      { p: 'Antecedência mínima pra junho/2026?', r: 'Ipanema/Leblon: 45-60 dias mínimo, principalmente pra junina em cobertura/clube. Pras datas paralelas (21/06, 28/06 de 2026): reserve com 75 dias.' },
+      FAQ_CALENDARIO_2026,
     ],
   }),
 
@@ -157,7 +174,7 @@ export const PAGINAS_FESTA_JUNINA: IPagina[] = [
     description:
       'Touro mecânico profissional para arraiás privados no Méier, Cachambi, Engenho de Dentro e Piedade. Bairro do depósito — entrega em 8-30 min.',
     subtitle:
-      'Touro mecânico profissional pra arraiás e festas juninas privadas no Méier e bairros vizinhos da Zona Norte. Bairro do nosso depósito — entrega rápida garantida em 8-30 minutos. Laudo INMETRO NBR 16.071, seguro de RC R$ 300.000.',
+      'Touro mecânico profissional pra arraiás e festas juninas privadas no Méier (Região Administrativa com 352.595 moradores, Censo IBGE 2022) e bairros vizinhos da Zona Norte. Bairro do nosso depósito — entrega rápida garantida em 8-30 minutos. Laudo INMETRO NBR 16.071, seguro de RC R$ 300.000.',
     faqs: [
       { p: 'Por que o Méier tem entrega tão rápida?', r: 'Nosso depósito fica no Méier — entrega em 8-15 min em qualquer endereço do bairro. Em festa de imprevisto (alguém cancelou e vocês ficaram com data livre), conseguimos chegar em 30-45 min mesmo no mesmo dia, mediante disponibilidade.' },
       { p: 'Cabe em salão de festa típico de prédio do Méier?', r: 'Méier tem prédios anos 70-90 com pé-direito 2,60-2,90m em salão. Comporta infantil sem restrição; profissional precisa de 3m mínimo, comporta em prédio pós-2000 ou casa térrea. Mande foto + altura medida pelo WhatsApp.' },
@@ -166,7 +183,7 @@ export const PAGINAS_FESTA_JUNINA: IPagina[] = [
       { p: 'Festa de quadra ou rua fechada no Méier: como funciona alvará?', r: 'Festa em rua fechada exige alvará da Riotur + ofício à Subprefeitura da AP3. Em festa de quadra de associação (privada), basta liberação interna. Atendemos quadras do bairro (Mercadinho São José, Norte Shopping eventos) com frequência.' },
       { p: 'Festa privada em casa do Méier precisa de alvará?', r: POL_AVCB },
       { p: 'Idade mínima pra subir no touro?', r: POL_IDADE },
-      { p: 'Antecedência mínima pra junho/2026?', r: 'Pra junina no Méier, 21-30 dias funciona pra maioria das datas (vantagem do bairro do depósito — temos prioridade local). Pras paralelas (21/06 e 28/06): 45 dias mínimo.' },
+      FAQ_CALENDARIO_2026,
     ],
   }),
 
@@ -176,6 +193,8 @@ export const PAGINAS_FESTA_JUNINA: IPagina[] = [
     evento: 'festa-junina',
     description:
       'Touro mecânico profissional para arraiás privados em Madureira, Cascadura, Oswaldo Cruz e Campinho. Saída do depósito em Méier, entrega em 25-60 min.',
+    subtitle:
+      'Touro mecânico profissional para arraiás privados em Madureira (Região Administrativa com 305.445 moradores, Censo IBGE 2022 — uma das mais densas da Zona Norte e berço de duas grandes escolas de samba: Portela e Império Serrano), Cascadura, Oswaldo Cruz e Campinho. Saída de Méier, entrega 25-60 min.',
     faqs: [
       { p: 'Tempo de entrega real Méier → Madureira?', r: 'Depósito Méier → Madureira: 25-60 min dependendo do dia. Sábado de manhã (até 11h): 25-35 min. Sábado tarde (12h-18h): 45-60 min — Mercadão de Madureira fecha algumas vias. Domingo: 25-40 min. Recomendamos entrega antes das 11h em sábado.' },
       { p: 'Cabe no salão de festa de prédio em Madureira?', r: 'Madureira tem prédios anos 60-80 com pé-direito 2,40-2,80m em salão. Comporta infantil; profissional precisa de prédio mais novo (pós-2000) ou casa térrea. Mande foto + altura pelo WhatsApp pra confirmar.' },
@@ -184,7 +203,7 @@ export const PAGINAS_FESTA_JUNINA: IPagina[] = [
       { p: 'Festa em quadra de escola de samba (Portela, Império Serrano) com touro mecânico?', r: 'Sim, atendemos quadras de escola de samba. Exige pé-direito 3,2m+ e área 8×8m — comporta o gigante. Mediante apresentação de laudo INMETRO + ART + apólice de RC. Entregamos a documentação em 24h.' },
       { p: 'Festa de rua fechada em Madureira: precisa de alvará?', r: 'Sim — rua fechada pra evento exige alvará da Riotur (até 1 mês antes) + ofício à Subprefeitura da AP3. Em festa privada de associação ou quadra, basta autorização interna. Casa: ver Lei do Silêncio.' },
       { p: 'Idade mínima pra subir no touro?', r: POL_IDADE },
-      { p: 'Antecedência mínima pra junho/2026?', r: 'Pra junina em Madureira, 30-45 dias de antecedência funciona. Pras paralelas (21/06 e 28/06 de 2026): 60 dias. Demanda alta em quadra de escola de samba.' },
+      FAQ_CALENDARIO_2026,
     ],
   }),
 ];

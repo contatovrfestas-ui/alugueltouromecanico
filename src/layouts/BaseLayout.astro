@@ -20,7 +20,7 @@ const {
   canonical,
 } = Astro.props;
 
-const fullTitle = title.includes('Aluguel Touro Mecânico')
+const fullTitle = /touro mec[âa]nico/i.test(title)
   ? title
   : `${title} | Aluguel Touro Mecânico`;
 
