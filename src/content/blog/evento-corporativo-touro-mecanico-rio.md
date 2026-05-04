@@ -1,6 +1,6 @@
 ---
-title: 'Touro mecânico em evento corporativo no Rio: confraternização, integração e ativação de marca'
-description: 'Como contratar touro mecânico para evento corporativo no Rio: confraternização de fim de ano, integração de equipe, ativação de marca em feira ou stand. Documentação e logística.'
+title: 'Touro mecânico em evento corporativo no Rio'
+description: 'Touro mecânico em evento corporativo Rio: confraternização, integração de equipe, ativação de marca. Logística e documentação.'
 pubDate: 2026-05-08
 heroImage: '/images/blog/evento-corporativo-touro.webp'
 heroImageAlt: 'Touro mecânico em ativação de marca em evento corporativo no Rio'

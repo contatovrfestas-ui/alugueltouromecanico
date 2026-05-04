@@ -1,6 +1,6 @@
 ---
-title: 'Touro mecânico em formatura no Rio: como funciona e como contratar'
-description: 'Touro mecânico em formatura no Rio de Janeiro: como funciona, espaços compatíveis (Maracanãzinho, Riocentro, Vivo Rio), documentação exigida, custos e antecedência.'
+title: 'Touro mecânico em formatura no Rio: como contratar'
+description: 'Touro mecânico em formatura Rio: como funciona, espaços compatíveis (Maracanãzinho, Riocentro), documentação e custos.'
 pubDate: 2026-05-07
 heroImage: '/images/blog/formatura-touro-mecanico.webp'
 heroImageAlt: 'Formatura universitária com touro mecânico montado em ballroom'

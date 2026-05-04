@@ -1,6 +1,6 @@
 ---
-title: 'Quanto custa alugar um touro mecânico no Rio de Janeiro em 2026'
-description: 'Guia de preços de aluguel de touro mecânico no Rio de Janeiro em 2026: faixas por tamanho de festa, modelos infantil/profissional/gigante, custos extras (logística, hora extra, seguro).'
+title: 'Quanto custa touro mecânico no Rio em 2026'
+description: 'Preços de aluguel de touro mecânico no Rio em 2026 por tamanho de festa, modelos (infantil/profissional/gigante) e custos extras.'
 pubDate: 2026-05-03
 heroImage: '/images/blog/preco-touro-mecanico.webp'
 heroImageAlt: 'Touro mecânico profissional inflável montado em festa no Rio de Janeiro'

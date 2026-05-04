@@ -1,6 +1,6 @@
 ---
-title: 'Touro mecânico cabe no salão de festa do prédio? Guia por tipo de imóvel no Rio'
-description: 'Como saber se um touro mecânico cabe no salão de festa do prédio no Rio: pé-direito mínimo, área de queda, modelos infantil e profissional, anos de construção comuns por bairro.'
+title: 'Touro mecânico cabe no salão do prédio? Guia por imóvel'
+description: 'Como saber se touro mecânico cabe no salão do prédio Rio: pé-direito, área de queda, modelos infantil/profissional, por bairro.'
 pubDate: 2026-05-05
 heroImage: '/images/blog/touro-cabe-no-salao.webp'
 heroImageAlt: 'Diagrama de salão de festa de prédio com medidas para touro mecânico'

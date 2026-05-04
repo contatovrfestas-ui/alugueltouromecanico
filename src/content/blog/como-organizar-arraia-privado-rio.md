@@ -1,6 +1,6 @@
 ---
-title: 'Como organizar arraiá privado no Rio: checklist completo de junho 2026'
-description: 'Checklist prático pra organizar arraiá privado em casa, condomínio ou casa de festas no Rio em 2026: data, espaço, atrações, comida, lei do silêncio e logística.'
+title: 'Arraiá privado Rio 2026: touro mecânico e checklist'
+description: 'Checklist pra arraiá privado em casa, condomínio ou casa de festas Rio 2026: data, espaço, atrações, lei do silêncio e logística.'
 pubDate: 2026-05-04
 heroImage: '/images/blog/arraia-privado-checklist.webp'
 heroImageAlt: 'Festa junina privada com touro mecânico montado em quintal no Rio de Janeiro'

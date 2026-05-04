@@ -1,5 +1,5 @@
 ---
-title: 'Festa de rua e condomínio no Rio: precisa de autorização?'
+title: 'Autorização pra touro mecânico em festa de rua Rio'
 description: 'Quando a festa privada de rua ou condomínio no Rio precisa de RIOTUR, CET-RIO, AVCB ou aprovação da síndica. Regras práticas e checklist por caso.'
 pubDate: 2026-05-04
 heroImage: '/images/blog/autorizacao-festa-rua-condominio-rio.webp'

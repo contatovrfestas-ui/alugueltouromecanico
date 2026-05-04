@@ -1,5 +1,5 @@
 ---
-title: 'Festa de empresa fim de ano Rio 2026: calendário e datas'
+title: 'Festa empresa fim de ano: touro mecânico Rio 2026'
 description: 'Quando reservar atração pra festa de empresa fim de ano no Rio em 2026: picos novembro-dezembro, datas estratégicas, semanas mais lotadas, antecedência ideal.'
 pubDate: 2026-05-04
 heroImage: '/images/blog/calendario-festas-corporativas-rio-fim-ano.webp'

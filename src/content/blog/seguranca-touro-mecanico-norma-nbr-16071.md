@@ -1,6 +1,6 @@
 ---
-title: 'Segurança no touro mecânico: o que a ABNT NBR 16.071 exige (e como cobrar)'
-description: 'A norma ABNT NBR 16.071:2012 regulamenta a operação de touro mecânico inflável no Brasil. Veja os 7 pontos críticos que a empresa de aluguel deve cumprir e como cobrar.'
+title: 'Segurança no touro mecânico: ABNT NBR 16.071 exige'
+description: 'ABNT NBR 16.071:2012 regulamenta touro mecânico no Brasil. Os 7 pontos críticos que a empresa de aluguel deve cumprir.'
 pubDate: 2026-05-06
 heroImage: '/images/blog/seguranca-norma-nbr-16071.webp'
 heroImageAlt: 'Equipamento de proteção e laudo INMETRO de touro mecânico inflável'
