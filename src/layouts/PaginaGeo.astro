@@ -66,6 +66,16 @@ const fontes = [
     <header class="mb-6">
       <h1>{pagina.h1}</h1>
       <p class="text-base md:text-lg text-rodeio-cinza-rustico mt-3" set:html={pagina.subtitle} />
+      {pagina.imagem_hero && (
+        <img
+          src={pagina.imagem_hero}
+          alt={pagina.imagem_hero_alt}
+          class="w-full rounded-lg mt-6 aspect-video object-cover"
+          loading="eager"
+          width="1408"
+          height="792"
+        />
+      )}
       <div class="mt-6">
         <CTAWhatsApp bairro={bairro.nome} evento={evento.nome} />
       </div>
