@@ -15,3 +15,6 @@ export { PAGINA_TIJUCA_FESTA_JUNINA } from './data-pagina-tijuca-festa-junina';
 export { PAGINAS_FESTA_JUNINA } from './data-paginas-festa-junina';
 export { PAGINAS_FORMATURA } from './data-paginas-formatura';
 export { PAGINAS_ANIVERSARIO_INFANTIL } from './data-paginas-aniversario-infantil';
+export { PAGINAS_ANIVERSARIO_18 } from './data-paginas-aniversario-18';
+export { PAGINAS_FESTA_EMPRESA } from './data-paginas-festa-empresa';
+export { PAGINAS_CASAMENTO } from './data-paginas-casamento';
