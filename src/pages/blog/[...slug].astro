@@ -62,6 +62,17 @@ const breadcrumbSchema = {
       {post.data.updatedDate && ` · atualizado em ${post.data.updatedDate.toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })}`}
     </p>
 
+    {post.data.heroImage && (
+      <img
+        src={post.data.heroImage}
+        alt={post.data.heroImageAlt || post.data.title}
+        class="w-full rounded-lg my-6 aspect-video object-cover"
+        loading="eager"
+        width="1408"
+        height="792"
+      />
+    )}
+
     <Content />
 
     <section class="bg-rodeio-creme py-8 my-10 -mx-4 md:-mx-6 px-4 md:px-6 rounded text-center">
