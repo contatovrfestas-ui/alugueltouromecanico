@@ -59,6 +59,14 @@ const fontes = [
       em {bairro.nome}. Entrega em {bairro.tempo_entrega_min}-{bairro.tempo_entrega_max} minutos
       do depósito Méier, com laudo ABNT NBR 16.071, seguro de RC R$ 300.000 e operador profissional toda a festa.
     </p>
+    <img
+      src={`/images/bairros/${bairro.slug}-festa-junina.webp`}
+      alt={`Touro mecânico em ${bairro.nome}, Rio de Janeiro`}
+      class="w-full rounded-lg mt-6 aspect-video object-cover"
+      loading="eager"
+      width="1408"
+      height="792"
+    />
     <div class="mt-6">
       <CTAWhatsApp bairro={bairro.nome} />
     </div>
